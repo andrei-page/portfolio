@@ -1,0 +1,436 @@
+.preloader
+    position: fixed
+    overflow: hidden
+    left: 0
+    right: 0
+    top: 0
+    bottom: 
+    width: 100vw
+    height: 100vh
+    background: #1d1d1d
+    z-index: 1001
+    &__title
+        +font-fallback('Amatic SC')
+        color: #ffffff
+        letter-spacing: 5px
+        font-size: 3.5em
+        position: absolute
+        top: 55%
+        left: 60%
+       
+.roket_container
+    width: 220px; 
+    height: 380px;
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: vibration 0.2s infinite;
+@keyframes vibration 
+    0% 
+        transform: translate(0,0) rotate(45deg);
+    50% 
+        transform: translate(1px,-1px) rotate(45deg);
+    100% 
+        transform: translate(0,0) rotate(45deg);
+
+.capsule 
+    width: 111px; 
+    height: 154px;
+    overflow: hidden;
+    position: absolute; 
+    left: 46px;
+    top: 5px;
+    z-index: 100;
+.capsule .top 
+    position: absolute; 
+    left: 0;
+    width: 0; 
+    height: 0; 
+    padding: 0;
+    border-bottom: 62px solid #f3f3f3;
+    border-left: 56px solid transparent;
+    border-right: 56px solid transparent;
+.capsule .top:after
+    content: '';
+    position: absolute; 
+    left: 25px; 
+    top: -14px;
+    width: 0; height: 0;
+    border-bottom: 84px solid #1d1d1d;
+    border-left: 0px solid transparent;
+    border-right: 156px solid transparent;
+    transform: skew(42deg)
+.capsule .top .shadow
+    position: absolute; left: 0; top: 0;
+    width: 0; height: 0;
+    border-bottom: 90px solid #DCDCDC;
+    border-left: 20px solid transparent;
+    border-right: 80px solid transparent;
+    transform: skew(25deg);
+.capsule .base 
+    position: absolute; left: 0; top: 62px;
+    width: 112px; height: 99px; 
+    background: linear-gradient(to right, #f3f3f3 63%, #DCDCDC 63%);
+.window_big
+    width: 70px; height: 70px;
+    background-color: #018574;
+    border-radius: 50%;
+    position: absolute;
+    top: 57px; left: 66px;
+    z-index: 110;
+
+.wing_left 
+    position: absolute;
+    left: 16px; top: 82px;
+    height: 103px; width: 0; padding: 0;
+    border-right: 38px solid #018574;
+    border-bottom: 19px solid transparent;
+    border-top: 21px solid transparent;
+    transform: rotate(10deg) skew(5deg);
+.wing_left:after 
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    width: 0; height: 0;
+    border-top: 20px solid transparent;
+    border-right: 50px solid #1d1d1d;
+    border-bottom: 50px solid transparent;
+.wing_right 
+    position: absolute;
+    height: 97px; width: 0; padding: 0;
+    top: 67px; right: 30px;
+    border-right: 40px solid #018574;
+    border-bottom: 15px solid transparent;
+    border-top: 0px solid transparent;
+    transform: rotate(-10deg) skew(-5deg);
+.wing_right:after 
+    content: '';
+    position: absolute;
+    top: -33px; left: -58px;
+    width: 101px; height: 0;
+    border-top: 23px solid transparent;
+    border-right: 68px solid #1d1d1d;
+    border-bottom: 45px solid transparent;
+.tail   
+    position: absolute;
+    width: 101px; height:0;
+    top: 153px; left: 51px;
+    border-top: 23px solid #018574;
+    border-left: 9px solid transparent;
+    border-right: 8px solid transparent;
+    z-index: 100;
+.fire_1 
+    position: absolute; z-index: 90;
+    left: 64px; top: 169px;
+    width: 70px; height: 70px;
+    background: linear-gradient(135deg, #ef8832 50%, #e82134 50%);
+    transform: rotate(-40deg) skew(1deg,-11deg);
+    animation: main_fire 0.1s ease-in infinite;
+@keyframes main_fire
+    0%
+         transform: translate(0,5px) scale(1.1,1) rotate(-33deg) skew(0deg,-30deg)
+    100% 
+        transform: translate(0,0px) scale(1.1,2) rotate(-33deg) skew(0deg,-30deg)
+.fire_2 
+    position: absolute; z-index: 90;
+    left: 63px; top: 230px;
+    width: 33px; height: 33px;
+    background: linear-gradient(135deg, #ef8832 50%, #e82134 50%);
+    transform: rotate(-33deg) skew(0deg,-30deg);
+    animation: fire_2 0.3s ease-in infinite;
+@keyframes fire_2 
+    0% 
+        transform: translate(0,-10px) scale(1) rotate(-33deg) skew(0deg,-30deg); opacity: 1;
+    100% 
+        transform: translate(0,50px) scale(0.7) rotate(-33deg) skew(0deg,-30deg); opacity: 0;
+.fire_3 
+    position: absolute; z-index: 90;
+    left: 50px; top: 196px;
+    width: 22px; height: 22px;
+    background: linear-gradient(135deg, #ef8832 50%, #e82134 50%);
+    transform: rotate(-33deg) skew(0deg,-30deg);
+    animation: fire_2 0.3s 0.2s ease-in infinite;
+.fire_4 
+    position: absolute; z-index: 90;
+    left: 126px; top: 200px;
+    width: 22px; height: 22px;
+    background: linear-gradient(135deg, #ef8832 50%, #e82134 50%);
+    transform: rotate(-33deg) skew(0deg,-30deg);
+    animation: fire_2 0.3s ease-in infinite;
+.spark_1 
+    position: absolute;
+    left: 40px;
+    bottom: 77px;
+    width: 12px; 
+    height: 12px;
+    background: #e82134;
+    animation: spark_fire 0.2s infinite;
+.spark_2 
+    position: absolute;
+    left: 132px; 
+    bottom: 68px;
+    width: 10px; 
+    height: 10px;
+    background: #ef8b32;
+    animation: spark_fire 0.2s infinite;
+.spark_3 
+    position: absolute;
+    left: 109px; 
+    bottom: 80px;
+    width: 10px;
+    height: 10px;
+    background: #e82134
+    animation: spark_fire 0.2s infinite;
+
+.spark_4 
+    position: absolute;
+    left: 93px;
+    bottom: 20px;
+    width: 10px;
+    height: 10px;
+    background: #ef8b32;
+    animation: spark_fire 0.24s infinite;
+.spark_5
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    width: 10px;
+    height: 10px;
+    background: #FF4500;
+    animation: spark_fire 0.24s infinite;
+.spark_6
+    position: absolute;
+    left: 150px;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+    background: #ef8b32;
+    animation: spark_fire 0.24s infinite;
+
+@keyframes spark_fire 
+    0% 
+        transform: translate(0,-10px); 
+        opacity: 1;
+    100% 
+        transform: translate(0,50px); 
+        opacity: 0;
+.star 
+    position: absolute;
+    width: 5px; 
+    height: 10px;
+    border-radius: 50%;
+    background: #fff fixed
+    animation: space 0.4s infinite;
+.star_1 
+    left: 0px;
+    top: -30px;
+    animation-delay: 0.1s
+.star_2 
+    left: 60px;
+    top: 90px;
+    animation-delay: 0.12s
+.star_3
+    left: 80px; 
+    top: 35px; 
+    animation-delay: 0.15s
+.star_4
+    left: 130px; 
+    top: 280px; 
+    animation-delay: 0.1s
+.star_5
+    left: 160px;
+    top: 300px; 
+    animation-delay: 0.34s
+.star_6 
+    left: 50px;
+    top: 60px;
+    animation-delay: 0.46s
+.star_7 
+    left: -50px; 
+    top: 40px;
+    animation-delay: 0.1s
+.star_8 
+    left: 150px;
+    top: -10px; 
+    animation-delay: 0.1s
+.star_9 
+    left: 30px;
+    top: 300px;
+    animation-delay: 0.32s
+.star_10
+    left: 70px; 
+    top: 80px;
+    animation-delay: 0.1s
+.star_11
+    left: 50px;
+    top: 330px; 
+    animation-delay: 0.25s
+.star_12 
+    left: 80px; 
+    top: 200px;
+    animation-delay: 0.45s
+.star_13
+    left: 50px; 
+    top: 50px; 
+    animation-delay: 0.1s
+.star_14
+    left: 90px;
+    top: -10px;
+    animation-delay: 0.3s
+.star_15
+    left: 80px;
+    top: 210px;
+    animation-delay: 0.1s
+.star_16
+    left: 80px;
+    top: 100px;
+    animation-delay: 0.1s
+.star_17
+    left: 10px;
+    top: 210px;
+    animation-delay: 0.1s
+.star_18
+    left: 50px;
+    top: 210px;
+    animation-delay: 0.1s
+.star_19
+    left: 0px;
+    top: 100px;
+    animation-delay: 0.1s
+.star_20
+    left: -100px;
+    top: 100px;
+    animation-delay: 0.1s
+.star_21
+    left: -250px;
+    top: 110px;
+    animation-delay: 0.1s
+.star_22
+    left: 100px;
+    top: 10px;
+    animation-delay: 0.1s
+.star_23
+    left: 550px;
+    top: 210px;
+    animation-delay: 0.1s
+.star_24
+    left: 0px;
+    top: 0px;
+    animation-delay: 0.1s
+.star_25
+    left: 0px;
+    top: 10px;
+    animation-delay: 0.1s
+.star_26
+    left: 50px;
+    top: 500px;
+    animation-delay: 0.1s
+.star_27
+    left: 50px;
+    top: 500px;
+    animation-delay: 0.1s
+.star_28
+    left: -50px;
+    top: 500px;
+    animation-delay: 0.1s
+.star_29
+    left: -100px;
+    top: 500px;
+    animation-delay: 0.1s
+.star_30
+    left: -200px;
+    top: 600px;
+    animation-delay: 0.1s
+.star_31
+    left: -200px;
+    top: 200px;
+    animation-delay: 0.1s
+.star_32
+    left: -100px;
+    top: 300px;
+    animation-delay: 0.1s
+.star_33
+    left: -400px;
+    top: 200px;
+    animation-delay: 0.1s
+.star_34
+    left: -300px;
+    top: 300px;
+    animation-delay: 0.1s
+.star_35
+    left: -200px;
+    top: 100px;
+    animation-delay: 0.1s
+.star_36
+    right: -200px
+    top: 100px;
+    animation-delay: 0.1s
+.star_37
+    right: -300px;
+    top: 100px;
+    animation-delay: 0.1s
+.star_38
+    right: -400px;
+    top: -100px;
+    animation-delay: 0.1s
+.star_39
+    right: -500px;
+    top: -50px;
+    animation-delay: 0.1s
+.star_40
+    right: -100px;
+    top: -200px;
+    animation-delay: 0.1s
+.star_41
+    right: -100px;
+    top: -100px;
+    animation-delay: 0.1s
+.star_42
+    right: -100px;
+    top: -200px;
+    animation-delay: 0.1s
+.star_43
+    right: 100px;
+    top: -300px;
+    animation-delay: 0.1s
+.star_44
+    right: 100px;
+    top: -200px;
+    animation-delay: 0.1s
+.star_45
+    right: -50px;
+    top: -100px;
+    animation-delay: 0.1s
+.star_46
+    right: -50px;
+    top: -300px;
+    animation-delay: 0.1s
+.star_47
+    right: -300px;
+    top: -300px;
+    animation-delay: 0.1s
+.star_48
+    right: -250px;
+    top: -150px;
+    animation-delay: 0.1s
+.star_49
+    right: -250px;
+    top: 200px;
+    animation-delay: 0.1s
+.star_50
+    right: -150px;
+    top: 250px;
+    animation-delay: 0.1s
+
+
+
+@keyframes space 
+    0% 
+        transform: translate(0,-100px) scale(1,1); 
+        opacity: 1;
+    100% 
+        transform: translate(0,100px) scale(1,1); 
+        opacity: 0;

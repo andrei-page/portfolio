@@ -1,0 +1,231 @@
+
+// .accordion-news 
+//     width: 100%;
+//     overflow: hidden;
+// .accordion-news  ul 
+//     width: 100%;
+//     display: table;
+//     table-layout: fixed;
+//     margin: 0;
+//     padding: 0;
+// .accordion-news  ul li
+//     display: table-cell;
+//     vertical-align: bottom;
+//     position: relative;
+//     width: 20%// 5 into 100
+//     height: 100% !important
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     transition: all 800ms ease;
+
+// .accordion-news  div
+//     display: block;
+//     overflow: hidden;
+//     width: 100%;
+//     height: 100vh !important
+// .accordion-news h2
+//     color: #fff;
+//     +font-fallback('Raleway')
+//     font-size: 2.2rem;
+//     font-weight: 300;
+//     letter-spacing: 0.1em;
+//     line-height: 50px;
+//     text-align: center
+//     text-transform: uppercase;
+//     word-wrap: break-word;
+// .accordion-news  a
+//     display: block;
+//     height: 100vh
+//     cursor: pointer
+//     width: 100%;
+//     text-align: center
+//     position: relative;
+//     z-index: 3;
+//     vertical-align: bottom;
+//     padding: 270px 0 50px 20px
+//     box-sizing: border-box;
+//     color: #fff
+//     text-decoration: none;
+//     +font-fallback("Lato")
+//     transition: all 200ms ease;
+
+// .menu
+//     margin: 0;
+//     padding: 0
+//     width: 100%;
+//     opacity: 1
+//     text-overflow: ellipsis;
+//     z-index: 5;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     transition: all 400ms ease;
+//     background: #ededed;
+//     position: absolute
+//     transform-origin: 0% 0%;
+//     transform: translate(-100%,0);
+//     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+// .accordion-news  h2 
+//     font-family: Montserrat,sans-serif;
+//     text-overflow: clip;
+//     font-size: 24px;
+//     text-transform: uppercase;
+//     margin-bottom: 2px;
+//     top: $text-offset;
+
+
+// .accordion-news  p 
+//     top: $text-offset;
+//     font-size: 13.5px;
+
+// .accordion-news   li:nth-child(1)
+//     background: url("../img/books-business-computer-459654.jpg") center
+//     background-size: cover
+// .accordion-news   li:nth-child(2)
+//     background: url("../img/contact-2.jpeg") center
+//     background-size: cover
+// .accordion-news   li:nth-child(3)
+//     background: url("../img/create.jpg") center
+//     background-size: cover
+// .accordion-news   li:nth-child(4)
+//     background: url("../img/index.jpg") bottom
+//     background-size: cover
+// .accordion-news   li:nth-child(5)
+//     background: url("../img/books-business-computer-459654.jpg") center
+//     background-size: cover
+
+
+// .accordion-news li
+//     // &:focus-within  
+//     //     width: 8%;
+//     &:focus
+//         outline: none;  
+//     &:hover
+//         width: 40%;    
+
+// .swal-overlay 
+//     background-color: rgba(0,0,0, 0.7);
+// .swal-button
+//     background: #A52A2A
+//     color: #fff
+    
+// .swal-button:focus
+//     background: #A52A2A
+// .swal-icon--success__line
+//     background-color: #A52A2A
+// .swal-icon--success
+//     border-color: #A52A2A
+// .swal-button
+//     border-radius: 0px
+
+// #menuToggle
+//     display: block;
+//     position: relative;
+//     z-index: 1;
+//     user-select: none;
+
+// #menuToggle input
+//     display: block;
+//     width: 40px
+//     height: 40px;
+//     left: 26px
+//     top: 10px
+//     position: absolute;
+//     cursor: pointer;
+//     opacity: 0; /* hide this */
+//     z-index: 10; /* and place it over the hamburger */
+
+// #menuToggle span
+//     display: block;
+//     width: 33px;
+//     height: 3px;
+//     margin-bottom: 5px;
+//     position: absolute
+//     background: #000
+//     margin-top: 30px
+//     margin-left: 30px
+//     z-index: 10;
+//     transform-origin: 4px 0px;
+//     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+
+// #menuToggle span:first-child
+//     transform-origin: 0% 0%;
+   
+
+// #menuToggle span:nth-last-child(2)
+//     transform-origin: 0% 100%;
+//     width: 33px;
+//     height: 3px;
+//     background: #000
+//     top: 8px;
+
+// #menuToggle input:checked ~ span
+//     opacity: 1;
+//     transform: rotate(45deg) translate(-3px, -3px);
+//     background: #232323;
+
+// #menuToggle input:checked ~ span:nth-last-child(3)
+//     opacity: 0;
+//     transform: rotate(0deg) scale(0.2, 0.2);
+
+// #menuToggle input:checked ~ span:nth-last-child(2)
+//     transform: rotate(-45deg) translate(-4px, 5px);
+
+// #menuToggle input:checked ~ ul
+//     transform: none;
+.loader
+    height: 1px;
+    background-color: #000000
+    position: absolute;
+    top: 50%
+    left: 50%
+    z-index: 2000
+.content
+.loading 
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    width: 100vw
+    height: 100vh
+    z-index: 1001
+.loading_name
+    position: absolute;
+    bottom: 50%
+    font-size: 1.9em
+    left: 0;
+    color: #000
+    width: 100%;
+    +font-fallback('Alex Brush')
+    text-align: center
+    letter-spacing: 2px
+#animate
+    animation-delay: 1s
+    animation-timing-function: easy-in-out
+#animate1
+    animation-delay: 2s
+    animation-timing-function: cubic-bezier(.47,-.44,.49,1,46)
+#animate6
+    animation-delay: 2s
+    animation-timing-function: cubic-bezier(.47,-.44,.49,1,46)
+#animate2
+    animation-delay: 1s
+#animate3
+    animation-delay: 0s
+#animate7
+    animation-delay: 2s
+#animate8
+    animation-delay: 2s
+   
+#animate4
+    animation-delay: 2s
+    animation-timing-function: easy-in-out
+#animate5
+    animation-delay: 2s
+    animation-timing-function: easy-in-out
+
+
+
+
+

@@ -1,0 +1,716 @@
+.b-header
+	&__bg
+		background: url("../img/home.jpg") bottom	
+		height: 100vh
+		background-size: cover
+		width: 50%
+	
+	&__bg-portfolio
+		background: url("../img/books-business-computer-459654.jpg") center
+		height: 100vh
+		background-size: cover
+	&__bg-contact
+		background: url("../img/contact-2.jpg") right
+		height: 100vh
+		background-size: cover
+	&__bg-about
+		background: url("../img/create.jpg") left
+		height: 100vh
+		background-size: cover
+	&__overlay
+		background-color: rgba(0,0,0,0.2)
+		top: 0	
+		left: 0	
+		position: absolute
+		height: 100%
+		width: 100%
+	&__box-title1
+		color: #fff
+	&__box-right
+		width: 50%
+		position: absolute
+		left: 0
+		+md
+			width: 100%
+	&__hash
+		font-size: 15px !important
+		text-transform: uppercase
+	&-row
+		margin: 0
+		&:after
+			content: ""
+			display: block
+			width: 100%
+			height: 1px
+			background-color: #f2f2f2
+			margin-top: 30px
+	&__box-title
+		word-wrap: break-word;
+		padding-top: 7% 
+		text-align: center
+		color: #000000;
+		+font-fallback("Alex Brush")
+		font-size: 1.8em;
+		font-weight: 400;
+		line-height: 1.7;
+		
+		margin-bottom: 1.5em;
+		margin-top: 0;		
+	&__head
+		word-wrap: break-word;
+		padding-top: 7% 
+		text-align: center
+		color: #000000;
+		+font-fallback('Montserrat')
+		font-size: 1.5em;
+		font-weight: 300;
+		line-height: 1.7;
+		text-transform: uppercase
+		margin-bottom: 1.5em;
+		margin-top: 0;
+		
+	&__item-img
+		width: 100%
+	&__box-img-second
+		max-width: 60%
+		animation-duration: 2s
+		position: relative 
+		left: 41%
+	&__box-img
+		visibility: visible
+		max-width: 57%
+		animation-duration: 2s
+	&__box-img__about
+		background: url("../img/about-bg.png")  no-repeat
+		height: 400px
+		width: 100%
+		background-size: cover
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin-top: 7%
+		
+
+	
+
+	&__bg
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		+md
+			width: 100%
+			position: static
+	&__bg-portfolio
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0
+		width: 50%;
+		+md
+			width: 100%
+			position: static
+	&__bg-contact
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0
+		width: 50%;
+		+lg
+			width: 100%
+			position: static
+	&__bg-about
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		+md
+			width: 100%
+			position: relative
+	&__item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		position: relative
+		padding-top: 40%
+		+md
+			padding-top: 350px
+		+sm
+			padding-top: 300px
+		+xs
+			padding-top: 220px
+	
+		
+	&__item-portfolio
+		+md
+			padding-top: 50%
+		+sm
+			padding-top: 50%
+		
+
+	
+	&__title-main
+		position: relative;
+		transform: translateY(-50%);
+		width: 90%;
+		color: #A52A2A
+		margin: 0 auto;
+		font-size: 95px;
+		overflow: hidden;
+		z-index: 500
+		bottom: 40%
+		+font-fallback("Montserrat")
+	span 
+		display: inline-block
+	&__title-head
+		position: relative;
+		transform: translateY(-50%);
+		width: 80%;
+		color: #A52A2A
+		margin: 0 auto;
+		font-size: 25px;
+		overflow: hidden;
+		z-index: 500
+		bottom: 40%
+		+font-fallback("Montserrat")
+		span 
+			display: inline-block
+
+	&__title
+		
+		color: #fff;
+		+font-fallback('Montserrat')
+		font-size: 2rem;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+		line-height: 50px;
+		text-align: center
+		text-transform: uppercase;
+		word-wrap: break-word;
+	&__box-item
+		// border-top: 1px solid #f2f2f2
+		padding: 7% 7% 13% 7%
+		position: relative
+		animation-duration: 2s
+	&__input
+		border: 1px solid #dedede
+		width: 88%
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin: 1px
+		padding: 0.64615385em 1.15384615em;
+		+font-fallback("Source Sans Pro")
+		font-size: 1em
+		+sm
+			width: 100%
+		&::placeholder
+			color: #555
+			+font-fallback("Source Sans Pro")
+			letter-spacing: 0.06em
+			font-size: 0.9em
+		&:focus
+			border-color: #A52A2A
+	&__input-title
+		clear: both;
+		color: #333;
+		font-family: "Roboto", sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		line-height: 1.7;
+		margin-bottom: 1.5em;
+		margin-top: 0;
+		text-transform: uppercase;
+	// &__box-top
+	// 	margin-top: -197px
+
+				
+	&__text
+		color: #fff;
+		+font-fallback('Montserrat')
+		font-size: 0.6em;
+		letter-spacing: 0.2em;
+		line-height: 20px
+		font-weight: 300
+		text-transform: uppercase;
+		&:hover
+			text-decoration: none
+			color: red
+	&__icon-codepen
+		&:hover
+			color: gray
+	&__icon-linkedin
+		&:hover
+			color: #0077B5
+	&__icon-git
+		&:hover
+			color: #6e5494
+	&__icon-face
+		&:hover
+			color: #3B5998
+	&__icon-fire
+		&:hover
+			color: red
+
+
+
+	&__img
+		position: absolute
+		top: 120px
+		width: 55%
+		left: 23.7%
+	&__img-1
+		position: absolute
+		top: 100px
+		width: 40%
+	
+
+
+	&__left
+		color: #000
+		border: 2px solid #000;
+		margin-right: 10px
+		height: 55px;
+		position: absolute
+		top: 70%
+		right: 200px
+
+		&:hover
+			color: red
+			border-color: red
+	&__right
+		color: #000
+		border: 2px solid #000;
+		height: 55px;
+		position: absolute
+		top: 79.4%
+		right: 210px
+		&:hover
+			color: red
+			border-color: red	
+	&__btn-port
+		display: inline-block;
+		text-decoration: none;
+		background-color: #000
+		text-align: left;
+		position: relative;
+		color: #fff
+		+font-fallback('Lato')
+		font-size: 10px;
+		font-weight: 700;
+		line-height: 34px;
+		width: 150px
+		height: 34px	
+		text-transform: uppercase;
+		/* Text style for "A, bout" */
+		letter-spacing: 5.2px;
+		overflow: hidden;
+		&:after
+			content: "view"
+			display: block
+			position: absolute
+			top: 0px
+			padding-left: 45px	
+		&:hover div
+			transform: translateZ(0)
+		div
+			transition: all .5s
+			display: inline-block;
+			background-color: #fff
+			color: #000
+			text-transform: uppercase;
+			white-space: nowrap;
+			padding-left: 5px
+			position: absolute	
+			top: -2px
+			padding-top: 3px	
+			margin-left: -8px		
+			transform: translateX(-101%);
+			&:after
+				color: #fff
+				clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+	&__btn
+		display: inline-block;
+		text-decoration: none;
+		background-color: #000
+		text-align: left;
+		position: relative;
+		color: #fff
+		+font-fallback('Lato')
+		font-size: 10px;
+		font-weight: 700;
+		line-height: 34px;
+		width: 150px
+		height: 34px	
+		text-transform: uppercase;
+		/* Text style for "A, bout" */
+		letter-spacing: 5.2px;
+		overflow: hidden;
+		&:after
+			content: "subscribe"
+			display: block
+			position: absolute
+			top: 0px
+			padding-left: 20px	
+		&:hover div
+			transform: translateZ(0)
+		div
+			transition: all .5s
+			display: inline-block;
+			background-color: #fff
+			color: #000
+			text-transform: uppercase;
+			white-space: nowrap;
+			padding-left: 5px
+			position: absolute	
+			top: -2px
+			padding-top: 3px	
+			margin-left: -8px		
+			transform: translateX(-101%);
+			&:after
+				color: #fff
+				clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+	&__btn-portfolio
+		display: inline-block;
+		text-decoration: none;
+		background-color: #000
+		text-align: left;
+		position: relative;
+		color: #fff
+		+font-fallback('Lato')
+		font-size: 10px;
+		font-weight: 700;
+		line-height: 34px;
+		width: 150px
+		height: 34px	
+		text-transform: uppercase;
+		/* Text style for "A, bout" */
+		letter-spacing: 5.2px;
+		overflow: hidden;
+		&:after
+			content: "view site"
+			display: block
+			position: absolute
+			top: 0px
+			padding-left: 30px	
+		&:hover div
+			transform: translateZ(0)
+		div
+			transition: all .5s
+			display: inline-block;
+			background-color: #fff
+			color: #000
+			text-transform: uppercase;
+			white-space: nowrap;
+			padding-left: 5px
+			transform: translateX(-101%);
+			&:after
+				color: #fff
+				clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+	&__btn--right
+		display: inline-block;
+		text-decoration: none;
+		background: #000
+		text-align: left;
+		position: relative;
+		color: #fff
+		+font-fallback('Lato')
+		font-size: 10px;
+		font-weight: 700;
+		line-height: 34px;
+		width: 150px
+		height: 34px
+		text-transform: uppercase;
+		/* Text style for "A, bout" */
+		letter-spacing: 5.2px;
+		overflow: hidden;
+		&:after
+			content: "view"
+			display: block
+			position: absolute
+			top: 0px
+			padding-left: 50px	
+		&:hover div
+			transform: translateZ(0)
+				
+		div
+			transition: all .5s
+			display: inline-block;
+			background-color: #fff
+			color: #000
+			padding-left: 5px
+			text-transform: uppercase;
+			white-space: nowrap;
+			transform: translateX(-101%);
+			&:after
+				color: #fff
+				clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+
+	
+	&__menu-link
+		color: #fff
+		position: absolute	
+		top: 80px
+		left: 39px			
+		+font-fallback('Roboto')
+		font-size: 15px
+		letter-spacing: 2px
+		&:hover
+			color: red
+			text-decoration: none
+	&__hire-port
+		transition: all .5s cubic-bezier(0.6,0,0.5,1)
+		z-index: 10;	
+		margin-top: 10px
+		margin-left: -350px
+		padding-left: 5px
+		&:hover
+			color: transparent	
+	&__hire-btn
+		transition: all .5s cubic-bezier(0.6,0,0.5,1)
+		position: absolute
+		z-index: 10;
+		top: 170px
+		+lg
+			top: 155px
+		+md
+			top: 180px
+		+sm
+			top: 150px	
+		// &:before
+		// 	content: "";
+		// 	display: block;
+		// 	height: 25px;
+		// 	width: 10px;
+		// 	left: 0	
+		// 	background-color: red
+		// 	position: absolute;
+		// 	top: -16px;
+		&:hover
+			color: transparent
+	&__hire-portfolio
+		transition: all .5s cubic-bezier(0.6,0,0.5,1)
+		position: absolute
+		z-index: 10;
+		top: 87%
+		
+		// &:before
+		// 	content: "";
+		// 	display: block;
+		// 	height: 25px;
+		// 	width: 10px;
+		// 	background-color: red
+		// 	position: absolute;
+		// 	top: -16px;
+		&:hover
+			color: transparent
+	&__hire-btn--right
+		transition: all .5s cubic-bezier(0.6,0,0.5,1)
+		position: absolute
+		z-index: 10;
+		top: 105%
+		
+		a
+		&:hover
+				color: transparent
+	&--top
+		position: absolute
+		top: 450px
+		left: 15px
+		
+	&__icons
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		padding-top: 1%
+		justify-content: center
+		background-color: #fff
+		+lg
+			padding-top: 6%
+		ul
+			list-style: none
+			li
+				display: inline-block
+				margin-right: 20px
+				color: #000
+				
+			a
+				color: #fff
+				font-size: 2em
+				
+				&:hover
+					text-decoration: none
+	&__social-icon
+		padding-right: 5px
+		font-size: 28px
+	&__box-text
+		+font-fallback('Lato')
+		padding: 7%
+		font-size: 1em
+		p
+			&::selection
+				background: #000
+				color: #fff
+
+	
+			
+
+
+.fade-in
+	opacity: 1;
+	animation-name: fadeInLeft
+	animation-timing-function: linear;
+	animation-duration: 1.5s;
+	transition: .8s all
+	
+@keyframes fadeInLeft
+	0%
+		opacity: 0;
+		transform: translateX(-100px);
+	100%
+		opacity: 1;
+		transform: translateX(0px);
+
+
+.fullscreenTrigger-close
+	display: none
+	position: absolute
+	top: 650px
+	right: 5%
+	transition: all .5s easy-in-out
+	+md
+		display: none
+.fullscreenTrigger-open
+	position: absolute
+	top: 580px
+	box-shadow: 0 0 0 rgba(165, 42,42, 0.4);
+	cursor: pointer
+	animation: pulse 2s infinite;
+	right: 5%
+	+md
+		display: none
+	
+@keyframes pulse 
+	0% 
+		box-shadow: 0 0 0 0 rgba(165, 42,42, 0.4);
+
+	70% 
+		box-shadow: 0 0 0 10px rgba(165,49,44, 0);
+
+	100% 
+		box-shadow: 0 0 0 0 rgba(165,49,44, 0);
+  
+
+.fullscreenTrigger svg
+	&:hover
+		fill: #000
+#form
+	position: relative
+.file-upload 
+	position: absolute /* Даем возможность делать позиционирование, внутри данного элемента */
+	overflow: hidden; /* Все что выходит за пределы - скрываем */
+	width: 130px; /* Задаем ширину кнопки выбора файла */
+	background: #A52A2A
+	height: 35px
+	color: #fff
+	top: 110%
+	right: 12%
+	text-align: center;
+	+font-fallback('Source Sans Pro')
+	font-weight: 700
+	font-size: 0.7em
+	letter-spacing: 2.5px
+	text-transform: uppercase
+	+sm
+		right: 0%
+	&:hover
+		color: #000
+		background: #fff
+		transition: 0.1s ease-in-out
+		border: 0.1px solid #dedede
+		
+.menu-over
+	overflow: hidden
+.file-upload input[type="file"]
+	display: none; /* Обязательно скрываем настоящий Input File */
+	
+
+
+.file-upload .file-span
+	font-family: Lato, -apple-system, BlinkMacSystemFont, Raleway, Comfortaa, "Source Sans Pro", "Segoe UI", Lato, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 10px;
+	line-height: 34px;
+	position: absolute
+	top: 0px
+	left: 15px
+
+iframe
+	margin-top: 80px
+.contain
+	width: 300px;
+	margin: 10px auto;
+	position: relative;
+	right: -180px
+	top: 40px
+.svg-input
+	position: absolute;
+	top: -500px;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	z-index: 1
+
+svg path
+	width: 10px
+	height: 10px
+	display: block
+.t-input 
+	position: absolute;
+	top: -370px;
+	left: 14px;
+	width: 250px;
+	height: 30px;
+	font-size: 1em;
+	border: none;
+	outline: none;
+	padding-top: 20px
+	background-color: transparent;
+	z-index: 2;
+	padding-left: 10px
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.2s 0.6s linear;
+.t-input::placeholder
+	+font-fallback("Lato")
+	color: #fff
+.t-input:focus
+	opacity: 1;
+	cursor: text;
+
+.magnifier 
+	stroke-dasharray: 0, 0, 140;
+	transition: all 0.8s linear;
+
+.t-input:focus+svg .magnifier 
+	stroke-dasharray: 0, 140, 0;
+.input-line
+    stroke-dasharray: 0, 600;
+    transition: all 1.1s cubic-bezier(0.73, 0.01, 0.35, 1);
+.t-input:focus+svg .input-line 
+    stroke-dasharray: 600,0;
+
+.box-text
+	animation-duration: 2s;
+	
+.title-box
+	margin-top: 10px

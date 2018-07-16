@@ -1,0 +1,132 @@
+extends templates/layout
+
+block main
+	//- .loading
+	//- 	.loader#loading
+	//- 	.loading_name Andrey V.
+	.content
+		.row.no-gutters#portfolio
+			.col-md-6.b-slide__box
+				.overlay-navigation
+					nav(role='navigation') 
+						ul
+							li
+								a(href='#', data-content='The beginning') Home
+							li
+								a(href='#', data-content='Curious?') About
+							li
+								a(href='#', data-content='I got game') Skills
+							li
+								a(href='#', data-content='Only the finest') Works
+							
+				section.home
+					.open-overlay#animate4
+						span.bar-top
+						span.bar-middle
+						span.bar-bottom
+				h1.b-header__head.b-slide__title#animate3 Portfolio
+					#slider-1
+						ul.slides
+							li.gallery-cell
+								img(src="img/renome.jpg", alt="1")
+								a(href="https://renome.surge.sh/",target="_blank").b-header__btn-port.b-header__hire-port
+									div view
+								.menu-container
+									.menu-wrapper
+										ul.menu-list.accordion
+											li#nav1.toggle.accordion-toggle
+												span.icon-plus
+													a.menu-link 
+											// accordion-toggle
+											ul.menu-submenu.accordion-content
+												li
+													a.head(href='#') Html,css,js,jquery,bootstrap 4
+												
+											
+											// menu-submenu accordon-content
+											
+											// menu-submenu accordon-content
+
+							li.gallery-cell
+								img(src="img/posh.jpg", alt="1")
+								a(href="https://posh-make.surge.sh",target="_blank").b-header__btn-port.b-header__hire-port
+									div view
+								.menu-container
+									.menu-wrapper
+										ul.menu-list.accordion
+											li#nav1.toggle.accordion-toggle
+												span.icon-plus
+													a.menu-link
+											// accordion-toggle
+											ul.menu-submenu.accordion-content
+												li
+													a.head Html,css,js,jquery,bootstrap 4
+												
+											
+											// menu-submenu accordon-content
+											
+											// menu-submenu accordon-content
+							
+					#slider-2
+						ul.slides
+							li.gallery-cell
+								img(src="img/renome.jpg", alt="1")
+							li.gallery-cell
+								img(src="img/posh.jpg", alt="1")
+						
+							
+						button.btn-next
+							svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
+								path#arrow-line(fill='#231F20', d='M0 5.9h28.7v1H0z')
+								path#arrow-line1(fill='#231F20', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
+						button.btn-prev
+							svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
+								path#arrow-line(fill='#231F20', d='M0 5.9h28.7v1H0z')
+								path#arrow-line2(fill='#231F20', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
+
+
+								
+				.b-header__icons
+					ul
+						a(href="#")
+							li
+								i.fab.fa-codepen.b-header__social-icon.b-header__icon-codepen
+						a(href="#")
+							li
+								i.fab.fa-facebook-messenger.b-header__social-icon.b-header__icon-linkedin
+						a(href="#")
+							li
+								i.fab.fa-github.b-header__social-icon.b-header__icon-git
+						a(href="#")
+							li
+								i.fa.fa-fire.b-header__social-icon.b-header__icon-fire
+
+						a(href="#")
+							li
+								i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
+				
+				//- 	i.fas.fa-angle-right.fa-8x.b-header__right
+			.col-md-6
+				.b-header__bg-portfolio#animate2
+					.b-header__overlay
+					.b-header__item.b-header__item-portfolio
+						.b-header__title Portfolio
+						.b-header__text #websites
+						a(href="#").fullscreenTrigger
+							svg(xmln
+							s='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='20px', height='20px', viewbox='0 0 20 20', version='1.1').fullscreenTrigger-open
+								path#fullscreen(fill="#fff",d='M6,0 L6,2 L2,2 L2,6 L0,6 L0,0 L6,0 Z M20,6 L18,6 L18,2 L14,2 L14,-6.58092909e-16 L20,4.4408921e-16 L20,6 Z M14,20 L14,18 L18,18 L18,14 L20,14 L20,20 L14,20 Z M3.6739404e-16,14 L2,14 L2,18 L6,18 L6,20 L0,20 L3.6739404e-16,14 Z')
+							svg(xmlns='http://www.w3.org/2000/svg', width='21', height='21', viewbox='0 0 20 20').fullscreenTrigger-close
+								path(fill="#fff",fill-rule='evenodd', d='M793,866 L793,864 L797,864 L797,860 L799,860 L799,866 L793,866 Z M807,860 L809,860 L809,864 L813,864 L813,866 L807,866 L807,860 Z M813,874 L813,876 L809,876 L809,880 L807,880 L807,874 L813,874 Z M799,880 L797,880 L797,876 L793,876 L793,874 L799,874 L799,880 Z', transform='translate(-793 -860)')
+						.contain
+							input.t-input(type='text', placeholder="Search..") 
+							svg.mySvg.svg-input
+								path.magnifier( d='M254 154 A 14 14 90 1 1 254.1 153.9 L 270 170', stroke='#fff' stroke-width='1', stroke-linejoin='round', fill='none')
+								path.input-line(d='M270 170 L10 170 L10 132 L270 132 L270 170', stroke='#fff', stroke-width='1', stroke-linecap='round', stroke-linejoin='round', fill='none')
+						
+						
+						
+					
+				
+			//- #toTop
+			//- 	i.fas.fa-level-up-alt

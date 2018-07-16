@@ -1,0 +1,119 @@
+.b-about
+	&__img
+		max-width: 100%
+	&__title 
+		font-size: 1.3em
+		+font-fallback("Lato")
+		position: absolute
+		top: 40%
+	&__list-item
+		list-style-type: none
+		li
+			&:before
+				content: ''
+				display: inline-block
+				background-color: red
+				width: 7px
+				height: 7px
+				margin-right: 1.5%
+		a
+			color: red
+			&:hover
+				text-decoration: none
+.wrapper-portfolio
+	overflow: hidden
+	height: 100vh
+.menu-wrapper 
+	max-width: 100%
+	cursor: pointer
+	color: #000
+	text-decoration: none
+
+.accordion-toggle, .accordion-content 
+	font-size: 16px;
+	position: relative;
+	background: #fff
+	letter-spacing: 1px;
+
+.menu-container .menu-list 
+	padding-left: 0;
+	display: block;
+	width: 100%;
+	max-width: 220px;
+	background: white;
+	z-index: 999;
+	position: relative
+	top: -46px
+	left: 170px
+	overflow-y: auto;
+	overflow-x: hidden;
+.accordion-content 
+    display: none;
+
+
+.accordion-toggle a:before, .accordion-toggle a:after 
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    width: 15px;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #000
+    transform-origin: 50% 50%;
+    transition: all 0.3s ease-out;
+
+.accordion-toggle a:before 
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 1;
+    z-index: 2;
+.accordion-toggle.active-tab 
+	background: #fff;
+	transition: all 0.3s ease;	
+
+.accordion-toggle a.active:before 
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background: #000 !important;
+
+.accordion-toggle a.active:after 
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background: #000 !important;
+    opacity: 0;
+ul.accordion-content
+	list-style-type: none
+	margin-top: -10px
+a.menu-link
+	color: #fff
+	text-decoration: none
+a.head
+	color: #000
+	font-size: 0.7em
+	text-decoration: none
+	list-style-type: none
+	margin-left: -40px
+#toTop 
+	text-align: center;
+	position: fixed;
+	bottom: 20px; /* отступ кнопки от нижнего края страницы*/
+	right: 25px;
+	cursor: pointer;
+	font-size: 40px
+	color: #000
+	z-index: 1000
+
+
+
+.section 
+	display: none;
+	width: 100%;
+	height: 100%;
+
+.section.active 
+	display: block;

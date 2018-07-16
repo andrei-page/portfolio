@@ -1,0 +1,107 @@
+.b-contact
+	&__input-top
+		margin-top: 5%
+	&__input-bottom
+		margin-top: 5%
+		margin-bottom: 12%
+	&__item-contact
+		+xs
+			padding-top: 65%
+	&__btn
+		display: inline-block;
+		text-decoration: none;
+		background-color: #A52A2A
+		text-align: left;
+		position: relative;
+		color: #fff
+		+font-fallback('Lato')
+		font-size: 10px;
+		font-weight: 700;
+		line-height: 34px;
+		width: 129px
+		height: 34px	
+		text-transform: uppercase;
+		/* Text style for "A, bout" */
+		letter-spacing: 5.2px;
+		overflow: hidden;
+		&:after
+			content: "send"
+			display: block
+			position: absolute
+			top: 0px
+			padding-left: 30px
+		&:hover div
+			transform: translateZ(0)
+		div
+			transition: all .5s
+			display: inline-block;
+			background-color: #fff
+			color: #000
+			text-transform: uppercase;
+			padding-left: 5px
+			margin-top: -10px
+			position: absolute
+			top: 10px	
+			transform: translateX(-112%);
+			margin-left: -8px
+			&:after
+				color: #fff
+				clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+	&__hire-btn
+		transition: all .5s cubic-bezier(0.6,0,0.5,1)
+		position: absolute
+		top: 110%
+		
+		&:hover
+			color: transparent
+input,textarea
+	background: none;
+	border: none;
+	
+	border-bottom: 1px solid #386884;
+	color: #222;
+	padding: 1em 0.25em;
+	width: 100%;
+.input-wrap 
+	position: relative
+	margin-top: 40px
+.input-wrap label 
+	position: absolute
+    padding: 0 0.25em;
+	top: 0px;
+	padding: 0.64615385em 1.15384615em;
+	+font-fallback("Source Sans Pro")
+	font-size: 1em
+	left: 0px;
+	z-index: 0;
+	color: #999;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+
+.input-wrap input 
+	z-index: 15;
+.input-wrap textarea 
+	z-index: 15;
+		
+.input-wrap input:focus + label,
+.input-wrap input:valid + label,
+.input-wrap textarea:focus + label,
+.input-wrap textarea:valid + label,
+
+	top: -40px;
+	left: 0px
+	width: 88%
+	display: block
+	margin-left: auto
+	margin-right: auto
+	margin: 1px
+	
+	&::placeholder
+		color: #555
+		+font-fallback("Source Sans Pro")
+		letter-spacing: 0.06em
+		font-size: 0.9em
+	&:focus
+		border-color: #A52A2A
+
+	

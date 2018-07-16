@@ -1,11 +1,12 @@
 
 =font-fallback($font)
-	font-family: $font, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+	font-family: $font, -apple-system,'Alex Brush','Cormorant Garamond', BlinkMacSystemFont,'Raleway','Amatic SC',"Comfortaa", 'Source Sans Pro',"Segoe UI",'Lato',"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",'Montserrat', "Helvetica Neue", 'Playfair Display', sans-serif
 
 $xl-width: 1200px;
 $lg-width: 992px;
 $md-width: 768px;
 $sm-width: 576px;
+$xs-width: 350px;
 
 =xl
 	@media (max-width: #{$xl-width - 1px})
@@ -18,4 +19,7 @@ $sm-width: 576px;
 		@content
 =sm
 	@media (max-width: #{$sm-width - 1px})
+		@content
+=xs
+	@media (max-width: #{$xs-width - 1px})
 		@content
