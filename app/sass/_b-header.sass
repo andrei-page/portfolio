@@ -99,7 +99,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0;
-		width: 44%;
+		width: 41.5%;
 		+md
 			width: 100%
 			position: static
@@ -108,7 +108,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0
-		width: 44%;
+		width: 50%;
 		+md
 			width: 100%
 			position: static
@@ -140,41 +140,45 @@
 		top: 50%
 		left: 50%
 		transform: translate(-50%,-50%)
-		+md
-			padding-top: 350px
-		+sm
-			padding-top: 300px
-		+xs
-			padding-top: 220px
+		// +md
+		// 	padding-top: 350px
+		// +sm
+		// 	padding-top: 300px
+		// +xs
+		// 	padding-top: 220px
 	
 		
 
 		
 
 	
-	// &__title-main
-	// 	position: absolute
-	// 	transform: translateY(-50%);
-	// 	width: 90%;
-	// 	color: #A52A2A
-	// 	margin: 0 auto;
-	// 	font-size: 70px;
-	// 	overflow: hidden;
-	// 	z-index: 900
-	// 	bottom: 10%
-	// 	+font-fallback("Montserrat")
+	&__title-main
+		position: absolute
+		top: 50px
+		left: 30px
+		transform: translateY(-50%);
+		width: 90%;
+		color: #A52A2A
+		margin: 0 auto;
+		font-size: 1em;
+		overflow: hidden;
+		font-weight: bold
+		z-index: 900
+		+font-fallback("Montserrat")
 	span 
 		display: inline-block
 	&__title-head
 		position: relative;
 		transform: translateY(-50%);
-		width: 100%;
-		color: #b97f6d
-		font-size: 90px;
 		z-index: 500
-		letter-spacing: 10px
+		letter-spacing: 2px
 		bottom: 20%
-		+font-fallback("Montserrat")
+		+font-fallback('Montserrat')
+		font-weight: bold
+		color: #000
+		font-size: .6em
+		margin-top: 115px
+		margin-left: 20px
 		span 
 			display: inline-block
 

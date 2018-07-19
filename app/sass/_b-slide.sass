@@ -1,22 +1,35 @@
 .b-slide
 	&__title
 		height: 532px 
+	
+	&__text
+		+font-fallback('Montserrat')
+		font-weight: bold
+		color: red
+		font-size: .6em
+		margin-top: 10px
+		
 
 #slider-1 
 	width: 500px
 	height: 300px
 	display: block
-	margin-left: auto
-	margin-right: auto
-	margin-top: 30px
+	margin-left: 55px
+	margin-top: 150px
 
 #slider-2
-	width: 350px
+	width: 200px
 	height: 300px
-	position: relative
 	display: block
-	left: 350px
-	top: 120px
+	position: absolute
+	right: 10px
+	top: 140px
+
+	
+	// position: relative
+	// display: block
+	// left: 350px
+	// top: 120px
 #slider-3
 	width: 100%
 	height: 100%
@@ -39,6 +52,8 @@
 		width: 100%;
 		position: relative
 		display: block;
+		
+		
 
 
 
@@ -161,15 +176,13 @@
 .btn-next 
 	background: none;
 	border: none;
-	position: fixed
-	right: 41.9%
-	top: 92%
+	position: absolute
+	top: 480px
+	left: 480px
 	z-index: 10
 	width: 55px;
 	height: 51px;
-	background-color: #fff
 	padding: 0;
-	background-color: #0a0e53
 	
 	&:focus
 		outline: none;

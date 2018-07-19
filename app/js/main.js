@@ -28,14 +28,14 @@ function tweenlettersup() {
     titlespans,
     0,
     { y: -100, x: -95, autoAlpha: 1, ease: Power3.linear },
-    0.1 - 0.15,
+    0.1 - 0.03,
     resolve
   );
   TweenMax.staggerTo(
     titlespans1,
     0,
     { y: 100, x: -55, autoAlpha: 1, ease: Power3.linear },
-    0.1 - 0.1,
+    0.1 - 0.03,
     resolve
   );
   function resolve() {
@@ -75,21 +75,21 @@ function tweenletterfromup() {
   TweenMax.staggerFromTo(
     titlespans,
     0.4,
-    { y: -200, x: 0, autoAlpha: 0, ease: Power3.linear},
+    { y: -100, x: 0, autoAlpha: 0, ease: Power3.linear},
     { y: 0, x: 0, autoAlpha: 1, ease: Power3.linear},
     0.1 - 0.01
   );
   TweenMax.staggerFromTo(
     titlespans1,
     0.4,
-    { y: 100, x: 0, autoAlpha: 0, ease: Power3.linear},
+    { y: 50, x: 0, autoAlpha: 0, ease: Power3.linear},
     { y: 0, x: 0, autoAlpha: 1, ease: Power3.linear},
-    0.1 - 0.01
+    0.1 - 0.03
   );
 }
 
 $(".btn-prev").on("click", function(e) {
-  tweenlettersdown().then(function() {
+  weenletterfromup().then(function() {
     let indexNumber = parseInt(
       $($(".section.active").next()).attr("data-slide")
     );
@@ -103,7 +103,7 @@ $(".btn-prev").on("click", function(e) {
 
     $(".section.active").removeClass("active");
     $(nextsection).addClass("active");
-    tweenletterfromDown();
+    tweenletterfromup();
   });
   clickcount++;
 });

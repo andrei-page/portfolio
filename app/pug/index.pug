@@ -6,26 +6,27 @@ block main
 	//- 	.loading_name Andrey V.
 	.content#home
 		.row.no-gutters#portfolio
-			.col-md-7.b-slide__box
+			.col-md-7.b-slide__box.order-last.order-md-6
 				
 				h1.b-header__head
 					#slider-1
 						ul.slides#animate6
 							li.gallery-cell
 								img(src="img/img-header-2.jpg", alt="1")
-							
+								.section.l1.active(data-slide="1")
+									h2.b-header__title-head #3 
 							li.gallery-cell
 								img(src="img/img-header-1.png", alt="1")
-								//- .section.l1.active(data-slide="1")
-								//- 	h2.b-header__title-head We are 
-								//- 	h2.b-header__title-head creative
+								.section.l1.active(data-slide="1")
+									h2.b-header__title-head #1 
 							li.gallery-cell
 								img(src="img/books-business-computer-459654.jpg", alt="1")
-							
-						//- button.btn-next
-						//- 	svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
-						//- 		path#arrow-line(fill='#fff', d='M0 5.9h28.7v1H0z')
-						//- 		path#arrow-line1(fill='#fff', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
+								.section.l1.active(data-slide="1")
+									h2.b-header__title-head #2
+						button.btn-next
+							svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
+								path#arrow-line(fill='#000', d='M0 5.9h28.7v1H0z')
+								path#arrow-line1(fill='#000', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
 						//- button.btn-prev
 						//- 	svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
 						//- 		path#arrow-line(fill='#b97f6d', d='M0 5.9h28.7v1H0z')
@@ -33,10 +34,11 @@ block main
 					#slider-2
 						ul.slides#animate7
 							li.gallery-cell
-								img(src="img/img-header-1.png", alt="1")
+								.section.l1.active(data-slide="1")
+									h2.b-header__title-main asdasfa
 							li.gallery-cell
-								img(src="img/books-business-computer-459654.jpg", alt="1")
-
+								.section.l1.active(data-slide="1")
+									//- h2.b-header__title-main Times
 				.b-header__box-item
 					form()
 						h1.b-header__input-title subscribe to news
@@ -63,14 +65,14 @@ block main
 						a(href="#")
 							li
 								i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
-				button.btn-scroll
-					h1.b-header__arrow-down scroll down
-					svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
-						path#arrow-line(fill='#b97f6d', d='M0 5.9h28.7v1H0z')
-						path#arrow-line2(fill='#b97f6d', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
+				//- button.btn-scroll
+				//- 	h1.b-header__arrow-down scroll down
+				//- 	svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
+				//- 		path#arrow-line(fill='#b97f6d', d='M0 5.9h28.7v1H0z')
+				//- 		path#arrow-line2(fill='#b97f6d', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
 				
 				//- 	i.fas.fa-angle-right.fa-8x.b-header__right
-			.col-md-5
+			.col-md-4.order-6.order-md-6
 				.overlay-navigation
 					nav(role='navigation') 
 						ul
