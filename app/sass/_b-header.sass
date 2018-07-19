@@ -18,7 +18,7 @@
 		height: 100vh
 		background-size: cover
 	&__overlay
-		background-color: rgba(0,0,0,0.2)
+		background-color: rgba(0,0,0,0.18)
 		top: 0	
 		left: 0	
 		position: absolute
@@ -56,18 +56,18 @@
 		
 		margin-bottom: 1.5em;
 		margin-top: 0;		
-	&__head
-		word-wrap: break-word;
-		padding-top: 7% 
-		text-align: center
-		color: #000000;
-		+font-fallback('Montserrat')
-		font-size: 1.5em;
-		font-weight: 300;
-		line-height: 1.7;
-		text-transform: uppercase
-		margin-bottom: 1.5em;
-		margin-top: 0;
+	// &__head
+	// 	word-wrap: break-word;
+	// 	padding-top: 7% 
+	// 	text-align: center
+	// 	color: #000000;
+	// 	+font-fallback('Montserrat')
+	// 	font-size: 1.5em;
+	// 	font-weight: 300;
+	// 	line-height: 1.7;
+	// 	text-transform: uppercase
+	// 	margin-bottom: 1.5em;
+	// 	margin-top: 0;
 		
 	&__item-img
 		width: 100%
@@ -89,6 +89,7 @@
 		margin-left: auto
 		margin-right: auto
 		margin-top: 7%
+	
 		
 
 	
@@ -98,7 +99,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0;
-		width: 50%;
+		width: 44%;
 		+md
 			width: 100%
 			position: static
@@ -107,7 +108,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0
-		width: 50%;
+		width: 44%;
 		+md
 			width: 100%
 			position: static
@@ -116,7 +117,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0
-		width: 50%;
+		width: 44%;
 		+lg
 			width: 100%
 			position: static
@@ -130,16 +131,15 @@
 			width: 100%
 			position: relative
 	&__item
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
+		
 		display: flex
 		justify-content: center
 		align-items: center
 		flex-direction: column
-		position: relative
-		padding-top: 40%
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
 		+md
 			padding-top: 350px
 		+sm
@@ -148,37 +148,32 @@
 			padding-top: 220px
 	
 		
-	&__item-portfolio
-		+md
-			padding-top: 50%
-		+sm
-			padding-top: 50%
+
 		
 
 	
-	&__title-main
-		position: relative;
-		transform: translateY(-50%);
-		width: 90%;
-		color: #A52A2A
-		margin: 0 auto;
-		font-size: 95px;
-		overflow: hidden;
-		z-index: 500
-		bottom: 40%
-		+font-fallback("Montserrat")
+	// &__title-main
+	// 	position: absolute
+	// 	transform: translateY(-50%);
+	// 	width: 90%;
+	// 	color: #A52A2A
+	// 	margin: 0 auto;
+	// 	font-size: 70px;
+	// 	overflow: hidden;
+	// 	z-index: 900
+	// 	bottom: 10%
+	// 	+font-fallback("Montserrat")
 	span 
 		display: inline-block
 	&__title-head
 		position: relative;
 		transform: translateY(-50%);
-		width: 80%;
-		color: #A52A2A
-		margin: 0 auto;
-		font-size: 25px;
-		overflow: hidden;
+		width: 100%;
+		color: #b97f6d
+		font-size: 90px;
 		z-index: 500
-		bottom: 40%
+		letter-spacing: 10px
+		bottom: 20%
 		+font-fallback("Montserrat")
 		span 
 			display: inline-block
@@ -196,7 +191,7 @@
 		word-wrap: break-word;
 	&__box-item
 		// border-top: 1px solid #f2f2f2
-		padding: 7% 7% 13% 7%
+		padding: 200px 7% 13% 7%
 		position: relative
 		animation-duration: 2s
 	&__input
@@ -340,7 +335,7 @@
 	&__btn
 		display: inline-block;
 		text-decoration: none;
-		background-color: #000
+		background-color: #b97f6d
 		text-align: left;
 		position: relative;
 		color: #fff
@@ -478,7 +473,7 @@
 		transition: all .5s cubic-bezier(0.6,0,0.5,1)
 		position: absolute
 		z-index: 10;
-		top: 170px
+		top: 330px
 		+lg
 			top: 155px
 		+md
@@ -525,6 +520,15 @@
 		position: absolute
 		top: 450px
 		left: 15px
+	&__arrow-down
+		transform: rotate(270deg)
+		display: inline-block
+		position: fixed
+		left: -17px
+		top: 210px
+		+font-fallback('Roboto')
+		font-style: italic
+		font-size: 1.3em
 		
 	&__icons
 		display: -webkit-flex
@@ -593,23 +597,11 @@
 .fullscreenTrigger-open
 	position: absolute
 	top: 580px
-	box-shadow: 0 0 0 rgba(165, 42,42, 0.4);
 	cursor: pointer
-	animation: pulse 2s infinite;
 	right: 5%
 	+md
 		display: none
-	
-@keyframes pulse 
-	0% 
-		box-shadow: 0 0 0 0 rgba(165, 42,42, 0.4);
 
-	70% 
-		box-shadow: 0 0 0 10px rgba(165,49,44, 0);
-
-	100% 
-		box-shadow: 0 0 0 0 rgba(165,49,44, 0);
-  
 
 .fullscreenTrigger svg
 	&:hover
@@ -714,3 +706,33 @@ svg path
 	
 .title-box
 	margin-top: 10px
+
+.btn-scroll
+	background: none;
+	border: none;
+	position: fixed
+	width: 60px;
+	height: 20px;
+	left: 0
+	top: 300px
+	z-index: 10
+	&:focus
+		outline: none;
+	svg
+		display: block;
+		width: 60px;
+		height: 20px;
+		transform: rotate(90deg)
+		#arrow-line
+			transition: all 0.3s ease-out;
+			transform-origin: right bottom
+		#arrow-line2
+			transition: all 0.3s ease-out;
+	&:hover
+		svg
+			#arrow-line 
+				transform: scaleX(1.5);
+				fill: red
+			#arrow-line2
+				transform: scaleX(1);
+				fill: red
