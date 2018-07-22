@@ -1,6 +1,47 @@
 .b-about
+	&__person-box
+		text-align: center
+		padding-top: 2%
+	&__box-bg
+		background-color: #000000
+	&__person-title
+		font-size: 1.5em
+		+font-fallback('Montserrat')
+		font-weight: 600
+	&__person-text
+		font-size: 1.5em
+		+font-fallback('Montserrat')
+		font-weight: 600
+		color: #FF0000
+		position: absolute
+		top: 150px
+		left: -50px
+		max-width: 430px
+	&__person-description
+		font-size: 1em
+		line-height: 14px
+		+font-fallback('Montserrat')
+	&__link
+		
+		ul
+			list-style: none
+			li
+				display: inline-block
+				margin-right: 20px
+				color: #000
+				
+			a
+				color: #fff
+				font-size: 2em
+				
+				&:hover
+					text-decoration: none
 	&__img
-		max-width: 100%
+		max-width: 85%
+		margin-left: 50px
+		box-shadow: 0 10px 6px -6px #777;
+		
+
 	&__title 
 		font-size: 1.3em
 		+font-fallback("Lato")

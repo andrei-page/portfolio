@@ -3,7 +3,7 @@ extends templates/layout
 block main
 
 	.row.no-gutters#home
-		.col-md-6.order-last.order-md-6
+		.col-md-7.order-last.order-md-6
 			.overlay-navigation
 				nav(role='navigation') 
 					ul
@@ -22,8 +22,31 @@ block main
 					span.bar-middle
 					span.bar-bottom
 			h1.b-header__head About us
-			img(src="img/work.jpg", alt="work").b-about__img
-			.b-about__title Hello. My name is Andrey
+			.row
+				.col-6#animate1
+					img(src="img/work.jpg", alt="work").b-about__img
+					.b-about__person-box
+						.b-about__person-title Andrei V.
+						.b-about__person-description developer
+						
+				.col-6#animate2
+					.b-about__person-text 
+						| Hello, <br>My name is Andrei. <br> I live in Ukraine and i 
+						span.b-about__box-bg junior frontend developer. 
+						|<br> I love coding as all of you do.
+					//- .b-about__link
+					//- 		ul
+					//- 			a(href="#")
+					//- 				li
+					//- 					i.fab.fa-codepen.b-header__social-icon.b-header__icon-codepen
+					//- 			a(href="#")
+					//- 				li
+					//- 					i.fab.fa-linkedin-in.b-header__social-icon.b-header__icon-linkedin
+					//- 			a(href="#")
+					//- 				li
+					//- 					i.fab.fa-github.b-header__social-icon.b-header__icon-git
+			
+			
 			.b-header__box-item
 				form()
 					h1.b-header__input-title subscribe to news
@@ -50,7 +73,7 @@ block main
 					a(href="#")
 						li
 							i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
-		.col-md-6.order-6.order-md-6
+		.col-md-5.order-6.order-md-6
 			.b-header__bg-about
 				.b-header__overlay
 				.b-header__item

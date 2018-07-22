@@ -104,4 +104,40 @@ input,textarea
 	&:focus
 		border-color: #A52A2A
 
+.file-upload 
+	position: absolute /* Даем возможность делать позиционирование, внутри данного элемента */
+	overflow: hidden; /* Все что выходит за пределы - скрываем */
+	width: 130px; /* Задаем ширину кнопки выбора файла */
+	background: #A52A2A
+	height: 35px
+	color: #fff
+	top: 110%
+	right: 12%
+	text-align: center;
+	+font-fallback('Source Sans Pro')
+	font-weight: 700
+	font-size: 0.7em
+	letter-spacing: 2.5px
+	text-transform: uppercase
+	+sm
+		right: 0%
+	&:hover
+		color: #000
+		background: #fff
+		transition: 0.1s ease-in-out
+		border: 0.1px solid #dedede
+		
+.menu-over
+	overflow: hidden
+.file-upload input[type="file"]
+	display: none; /* Обязательно скрываем настоящий Input File */
 	
+
+
+.file-upload .file-span
+	font-family: Lato, -apple-system, BlinkMacSystemFont, Raleway, Comfortaa, "Source Sans Pro", "Segoe UI", Lato, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 10px;
+	line-height: 34px;
+	position: absolute
+	top: 0px
+	left: 15px	

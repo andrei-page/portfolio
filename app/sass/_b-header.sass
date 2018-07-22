@@ -56,18 +56,18 @@
 		
 		margin-bottom: 1.5em;
 		margin-top: 0;		
-	// &__head
-	// 	word-wrap: break-word;
-	// 	padding-top: 7% 
-	// 	text-align: center
-	// 	color: #000000;
-	// 	+font-fallback('Montserrat')
-	// 	font-size: 1.5em;
-	// 	font-weight: 300;
-	// 	line-height: 1.7;
-	// 	text-transform: uppercase
-	// 	margin-bottom: 1.5em;
-	// 	margin-top: 0;
+	&__head
+		word-wrap: break-word;
+		padding-top: 7% 
+		text-align: center
+		color: #000000;
+		+font-fallback('Montserrat')
+		font-size: 1.5em;
+		font-weight: 500;
+		line-height: 1.7;
+		text-transform: uppercase
+		margin-bottom: 1.5em;
+		margin-top: 0;
 		
 	&__item-img
 		width: 100%
@@ -108,7 +108,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0
-		width: 50%;
+		width: 41.5%;
 		+md
 			width: 100%
 			position: static
@@ -117,7 +117,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0
-		width: 44%;
+		width: 41.5%;
 		+lg
 			width: 100%
 			position: static
@@ -126,7 +126,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0;
-		width: 50%;
+		width: 41.5%;
 		+md
 			width: 100%
 			position: relative
@@ -173,12 +173,12 @@
 		z-index: 500
 		letter-spacing: 2px
 		bottom: 20%
+		left: -200px
 		+font-fallback('Montserrat')
 		font-weight: bold
-		color: #000
-		font-size: .6em
+		color: red
+		font-size: .8em
 		margin-top: 115px
-		margin-left: 20px
 		span 
 			display: inline-block
 
@@ -195,7 +195,7 @@
 		word-wrap: break-word;
 	&__box-item
 		// border-top: 1px solid #f2f2f2
-		padding: 200px 7% 13% 7%
+		padding: 10% 7% 13% 7%
 		position: relative
 		animation-duration: 2s
 	&__input
@@ -372,7 +372,6 @@
 			position: absolute	
 			top: -2px
 			padding-top: 3px	
-			margin-left: -8px		
 			transform: translateX(-101%);
 			&:after
 				color: #fff
@@ -477,7 +476,7 @@
 		transition: all .5s cubic-bezier(0.6,0,0.5,1)
 		position: absolute
 		z-index: 10;
-		top: 330px
+		top: 220px
 		+lg
 			top: 155px
 		+md
@@ -533,7 +532,7 @@
 		+font-fallback('Roboto')
 		font-style: italic
 		font-size: 1.3em
-		
+
 	&__icons
 		display: -webkit-flex
 		display: -moz-flex
@@ -612,43 +611,7 @@
 		fill: #000
 #form
 	position: relative
-.file-upload 
-	position: absolute /* Даем возможность делать позиционирование, внутри данного элемента */
-	overflow: hidden; /* Все что выходит за пределы - скрываем */
-	width: 130px; /* Задаем ширину кнопки выбора файла */
-	background: #A52A2A
-	height: 35px
-	color: #fff
-	top: 110%
-	right: 12%
-	text-align: center;
-	+font-fallback('Source Sans Pro')
-	font-weight: 700
-	font-size: 0.7em
-	letter-spacing: 2.5px
-	text-transform: uppercase
-	+sm
-		right: 0%
-	&:hover
-		color: #000
-		background: #fff
-		transition: 0.1s ease-in-out
-		border: 0.1px solid #dedede
-		
-.menu-over
-	overflow: hidden
-.file-upload input[type="file"]
-	display: none; /* Обязательно скрываем настоящий Input File */
-	
 
-
-.file-upload .file-span
-	font-family: Lato, -apple-system, BlinkMacSystemFont, Raleway, Comfortaa, "Source Sans Pro", "Segoe UI", Lato, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	font-size: 10px;
-	line-height: 34px;
-	position: absolute
-	top: 0px
-	left: 15px
 
 iframe
 	margin-top: 80px
