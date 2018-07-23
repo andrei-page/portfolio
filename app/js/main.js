@@ -1,3 +1,29 @@
+$('.b-about__img').click(function() {
+  $('.b-about__person-text ').css("display","block");
+  $('.b-about__img-1').css("display","none");
+  $('.b-about__close ').css("display","block");
+  $('#box2').css("display","none");
+});
+
+$('.b-about__close').click(function() {
+  $('.b-about__img-1').css("display","block");
+  $('.b-about__person-text ').css("display","none");
+  $('.b-about__close ').css("display","none");
+  $('#box2').css("display","block");
+});
+
+$('.b-about__img-1').click(function() {
+  $('.b-about__person-desc ').css("display","block");
+  $('.b-about__img').css("display","none");
+  $('.b-about__close1').css("display","block");
+  $('#box1').css("display","none");
+});
+$('.b-about__close1').click(function() {
+  $('.b-about__person-desc ').css("display","none");
+  $('.b-about__img').css("display","block");
+  $('.b-about__close1').css("display","none");
+  $('#box1').css("display","block");;
+});
 //animate header-text
 
 var totaldiv = 0;
@@ -374,3 +400,8 @@ var $gallery1 = $('#slider-1 .slides').flickity({
         swal("Successful!", "Your message has been sent", "success");
 });
 
+$('#toTop').click(function() {
+ 
+    $('body,html').animate({scrollTop:0},1600);
+ 
+});

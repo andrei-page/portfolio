@@ -1,4 +1,7 @@
 .b-about
+
+	&__animate
+		transition: 1s linear
 	&__person-box
 		text-align: center
 		padding-top: 2%
@@ -8,6 +11,8 @@
 		font-size: 1.5em
 		+font-fallback('Montserrat')
 		font-weight: 600
+
+		
 	&__person-text
 		font-size: 1.5em
 		+font-fallback('Montserrat')
@@ -15,8 +20,28 @@
 		color: #FF0000
 		position: absolute
 		top: 150px
-		left: -50px
-		max-width: 430px
+		left: -70px
+		display: none
+		transition: .8s all linear
+		transition-delay: 2s
+		transition-duration: 2s
+		max-width: 450px
+		text-align: left
+	&__person-desc
+		font-size: 1.5em
+		+font-fallback('Montserrat')
+		font-weight: 600
+		color: #FF0000
+		position: absolute
+		top: 150px
+		right: -70px
+		z-index: 10
+		display: none
+		text-align: right
+		transition: .8s all linear
+		transition-delay: 2s
+		transition-duration: 2s
+		max-width: 450px
 	&__person-description
 		font-size: 1em
 		line-height: 14px
@@ -39,8 +64,15 @@
 	&__img
 		max-width: 85%
 		margin-left: 50px
-		box-shadow: 0 10px 6px -6px #777;
-		
+		&:hover
+			box-shadow: 0 10px 6px -6px #777;
+			cursor: pointer
+	&__img-1
+		max-width: 87%
+		margin-left: 10px
+		&:hover
+			box-shadow: 0 10px 6px -6px #777;
+			cursor: pointer
 
 	&__title 
 		font-size: 1.3em
@@ -61,6 +93,58 @@
 			color: red
 			&:hover
 				text-decoration: none
+	&__close1
+		position: absolute
+		left: 170px
+		top: 100px
+		font-size: 1.5em
+		cursor: pointer
+		display: none
+		z-index: 10
+		&:after
+			position: absolute;
+			left: 15px;
+			content: ' ';
+			height: 33px;
+			width: 2px;
+			background-color: red
+			transform: rotate(-45deg);
+		&:before
+			position: absolute;
+			left: 15px;
+			content: ' ';
+			height: 33px;
+			width: 2px;
+			background-color: red
+			transform: rotate(45deg);
+	&__close
+		position: absolute
+		left: 250px
+		top: 100px
+		font-size: 1.5em
+		cursor: pointer
+		display: none
+		z-index: 10
+		&:after
+			position: absolute;
+			left: 15px;
+			content: ' ';
+			height: 33px;
+			width: 2px;
+			background-color: red
+			transform: rotate(-45deg);
+		&:before
+			position: absolute;
+			left: 15px;
+			content: ' ';
+			height: 33px;
+			width: 2px;
+			background-color: red
+			transform: rotate(45deg);
+
+
+		
+
 .wrapper-portfolio
 	overflow: hidden
 	height: 100vh
@@ -158,3 +242,5 @@ a.head
 
 .section.active 
 	display: block;
+
+
