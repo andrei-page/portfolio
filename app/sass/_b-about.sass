@@ -27,16 +27,9 @@
 		+font-fallback('Montserrat')
 		font-weight: 600
 		color: #4fc08d
-		position: absolute
-		top: 150px
-		right: -70px
-		z-index: 10
-		display: none
+			
 		text-align: right
-		transition: .8s all linear
-		transition-delay: 2s
-		transition-duration: 2s
-		max-width: 450px
+		width: 380px
 	&__person-description
 		font-size: .8em
 		line-height: 14px
@@ -46,7 +39,7 @@
 	&__link
 		display: none
 		position: relative
-		right: 100px
+		right: 50px
 		ul
 			list-style: none
 			li
@@ -61,8 +54,10 @@
 				&:hover
 					text-decoration: none
 	&__img
-		max-width: 80%
-		margin-left: 50px
+		width: 80%
+		display: block
+		margin-left: auto
+		margin-right: auto
 		box-shadow: 0 10px 6px -6px #777;
 		cursor: pointer
 		// &:focus
@@ -70,11 +65,12 @@
 		// 	transition: .5s linear
 			
 	&__img-1
-		max-width: 87%
-		margin-left: 10px
-		&:hover
-			box-shadow: 0 10px 6px -6px #777;
-			cursor: pointer
+		width: 81.7%
+		display: block
+		margin-left: auto
+		margin-right: auto 
+		cursor: pointer
+		box-shadow: 0 10px 6px -6px #777;
 
 	&__title 
 		font-size: 1.3em
@@ -95,10 +91,20 @@
 			color: red
 			&:hover
 				text-decoration: none
-	&__person-item
-		position: relative
+	&__person-card
+		position: absolute
 		width: 400px
 		height: 350px
+		top: 30%
+		right: 74%
+		display: none
+	&__person-item
+		position: absolute
+		top: 0
+		width: 400px
+		height: 350px
+		left: 370px
+		cursor: pointer
 		display: none
 	&__close1
 		position: absolute
@@ -115,23 +121,22 @@
 			width: 2px;
 			background: #000
 			transform: rotate(-45deg);
+		
 		&:before
 			position: absolute;
 			left: 15px;
 			content: ' ';
 			height: 33px;
 			width: 2px;
-			
 			background-color: #4fc08d
 			z-index: 10
 			transform: rotate(45deg);
 	&__close
 		position: absolute
-		left: 250px
-		top: 100px
+		left: 0
+		top: 0
 		font-size: 1.5em
 		cursor: pointer
-		display: none
 		z-index: 10
 		&:after
 			position: absolute;
@@ -139,17 +144,18 @@
 			content: ' ';
 			height: 33px;
 			width: 2px;
-			background-color: #4fc08d
+			background: #4fc08d
 			transform: rotate(-45deg);
+		
 		&:before
 			position: absolute;
 			left: 15px;
 			content: ' ';
 			height: 33px;
 			width: 2px;
-			background-color: #4fc08d
+			background-color: #000
+			z-index: 10
 			transform: rotate(45deg);
-
 
 		
 
@@ -254,3 +260,28 @@ a.head
 
 .active 
 	display: block
+.active-animate	
+	display: block
+	animation: animate 1s cubic-bezier(.42,.97,.52,1.49)
+.active-card
+	display: block
+	animation: card 1s cubic-bezier(.42,.97,.52,1.49)
+.remove
+	display: none
+.animate
+	animation: leave 1s cubic-bezier(.42,.97,.52,1.49)
+@keyframes animate
+	from
+		left: 0
+	to
+		left: 370px
+@keyframes card
+	from
+		right: 0
+	to
+		right: 76%
+@keyframes leave
+	from
+		transform: translateY(-200px);
+	to
+		transform: translateY(0px);

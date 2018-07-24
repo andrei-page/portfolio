@@ -1,25 +1,21 @@
 $('.b-about__img').click(function() {
-  $('.b-about__person-item,.b-about__link').toggleClass("active").animate({
-    right: '50px',
-},800);
+  $('.b-about__person-item,.b-about__link').toggleClass("active-animate");
+  $(".b-about__box-img").toggleClass("remove").removeClass("animate");
 });
-
+$('.b-about__img-1').click(function() {
+  $('.b-about__person-card').toggleClass("active-card");
+  $(".b-about__box-img1").toggleClass("remove")
+});
 $('.b-about__close1').click(function() {
-  $('.b-about__person-item,.b-about__link').removeClass("active");
+  $('.b-about__person-item,.b-about__link').removeClass("active-animate");
+  $(".b-about__box-img").toggleClass("animate").removeClass("remove");
+  $('.b-about__person-card').removeClass("active-animate");
 });
-
-// $('.b-about__img-1').click(function() {
-//   $('.b-about__person-desc ').css("display","block");
-//   $('.b-about__img').css("display","none");
-//   $('.b-about__close1').css("display","block");
-//   $('#box1').css("display","none");
-// });
-// $('.b-about__close1').click(function() {
-//   $('.b-about__person-desc ').css("display","none");
-//   $('.b-about__img').css("display","block");
-//   $('.b-about__close1').css("display","none");
-//   $('#box1').css("display","block");;
-// });
+$('.b-about__close').click(function() {
+  $('.b-about__person-item,.b-about__link').removeClass("active-card");
+  $(".b-about__box-img-1").toggleClass("animate").removeClass("remove");
+  $('.b-about__person-card').removeClass("active-card");
+});
 //animate header-text
 
 var totaldiv = 0;
