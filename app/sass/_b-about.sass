@@ -4,34 +4,29 @@
 		transition: 1s linear
 	&__person-box
 		text-align: center
-		padding-top: 2%
+		padding-top: 4%
 	&__box-bg
 		background-color: #000000
 	&__person-title
 		font-size: 1.5em
 		+font-fallback('Montserrat')
 		font-weight: 600
-
-		
+		color: #4fc08d
 	&__person-text
 		font-size: 1.5em
 		+font-fallback('Montserrat')
 		font-weight: 600
-		color: #FF0000
+		color: #4fc08d
+		top: 120px
+		left: -47px
 		position: absolute
-		top: 150px
-		left: -70px
-		display: none
-		transition: .8s all linear
-		transition-delay: 2s
-		transition-duration: 2s
-		max-width: 450px
+		width: 380px
 		text-align: left
 	&__person-desc
 		font-size: 1.5em
 		+font-fallback('Montserrat')
 		font-weight: 600
-		color: #FF0000
+		color: #4fc08d
 		position: absolute
 		top: 150px
 		right: -70px
@@ -43,11 +38,15 @@
 		transition-duration: 2s
 		max-width: 450px
 	&__person-description
-		font-size: 1em
+		font-size: .8em
 		line-height: 14px
+		font-weight: 500
+		text-transform: uppercase
 		+font-fallback('Montserrat')
 	&__link
-		
+		display: none
+		position: relative
+		right: 100px
 		ul
 			list-style: none
 			li
@@ -57,16 +56,19 @@
 				
 			a
 				color: #fff
-				font-size: 2em
+				font-size: 1em
 				
 				&:hover
 					text-decoration: none
 	&__img
-		max-width: 85%
+		max-width: 80%
 		margin-left: 50px
-		&:hover
-			box-shadow: 0 10px 6px -6px #777;
-			cursor: pointer
+		box-shadow: 0 10px 6px -6px #777;
+		cursor: pointer
+		// &:focus
+		// 	box-shadow: 0px 0px 0px 0px
+		// 	transition: .5s linear
+			
 	&__img-1
 		max-width: 87%
 		margin-left: 10px
@@ -85,7 +87,7 @@
 			&:before
 				content: ''
 				display: inline-block
-				background-color: red
+				background-color: #4fc08d
 				width: 7px
 				height: 7px
 				margin-right: 1.5%
@@ -93,13 +95,17 @@
 			color: red
 			&:hover
 				text-decoration: none
+	&__person-item
+		position: relative
+		width: 400px
+		height: 350px
+		display: none
 	&__close1
 		position: absolute
-		left: 170px
-		top: 100px
+		right: 120px
+		top: 90px
 		font-size: 1.5em
 		cursor: pointer
-		display: none
 		z-index: 10
 		&:after
 			position: absolute;
@@ -107,7 +113,7 @@
 			content: ' ';
 			height: 33px;
 			width: 2px;
-			background-color: red
+			background: #000
 			transform: rotate(-45deg);
 		&:before
 			position: absolute;
@@ -115,7 +121,9 @@
 			content: ' ';
 			height: 33px;
 			width: 2px;
-			background-color: red
+			
+			background-color: #4fc08d
+			z-index: 10
 			transform: rotate(45deg);
 	&__close
 		position: absolute
@@ -131,7 +139,7 @@
 			content: ' ';
 			height: 33px;
 			width: 2px;
-			background-color: red
+			background-color: #4fc08d
 			transform: rotate(-45deg);
 		&:before
 			position: absolute;
@@ -139,7 +147,7 @@
 			content: ' ';
 			height: 33px;
 			width: 2px;
-			background-color: red
+			background-color: #4fc08d
 			transform: rotate(45deg);
 
 
@@ -244,3 +252,5 @@ a.head
 	display: block;
 
 
+.active 
+	display: block
