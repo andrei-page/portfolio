@@ -8,18 +8,15 @@
 	&__box-bg
 		background-color: #000000
 	&__person-title
-		font-size: 1.5em
+		font-size: 1.4em
 		+font-fallback('Montserrat')
 		font-weight: 600
 		color: #4fc08d
 	&__person-text
-		font-size: 1.5em
+		font-size: 1.4em
 		+font-fallback('Montserrat')
 		font-weight: 600
 		color: #4fc08d
-		top: 120px
-		left: -47px
-		position: absolute
 		width: 380px
 		text-align: left
 	&__person-desc
@@ -27,11 +24,10 @@
 		+font-fallback('Montserrat')
 		font-weight: 600
 		color: #4fc08d
-			
 		text-align: right
 		width: 380px
 	&__person-description
-		font-size: .8em
+		font-size: .7em
 		line-height: 14px
 		font-weight: 500
 		text-transform: uppercase
@@ -59,18 +55,14 @@
 		margin-left: auto
 		margin-right: auto
 		box-shadow: 0 10px 6px -6px #777;
-		cursor: pointer
-		// &:focus
-		// 	box-shadow: 0px 0px 0px 0px
-		// 	transition: .5s linear
-			
+	
 	&__img-1
 		width: 81.7%
 		display: block
 		margin-left: auto
 		margin-right: auto 
-		cursor: pointer
-		box-shadow: 0 10px 6px -6px #777;
+		box-shadow: 0 10px 6px -6px #777
+	
 
 	&__title 
 		font-size: 1.3em
@@ -100,16 +92,16 @@
 		display: none
 	&__person-item
 		position: absolute
-		top: 0
+		top: 30%
+		left: 74%
 		width: 400px
 		height: 350px
-		left: 370px
 		cursor: pointer
 		display: none
 	&__close1
 		position: absolute
-		right: 120px
-		top: 90px
+		right: 14%
+		top: -10%
 		font-size: 1.5em
 		cursor: pointer
 		z-index: 10
@@ -156,6 +148,60 @@
 			background-color: #000
 			z-index: 10
 			transform: rotate(45deg);
+	
+	&__item
+		position: relative
+	&__img-replace
+		position: absolute
+		display: block;
+		width: 35px;
+		height: 35px;
+		top: 85%
+		right: 15%
+		border-radius: 50%
+		background: #4fc08d
+		cursor: pointer
+		box-shadow: 0 0 0 0 rgba(#4fc08d,.5)
+		z-index: 2;
+		transition: background-color 0.3s;
+		animation: pulse 1.4s infinite cubic-bezier(.42,.97,.52,1.49)
+		
+		&::after
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			bottom: auto;
+			right: auto;
+			transform: translateX(-50%) translateY(-50%);
+			background-color: #fff;
+			transition: transform 0.3s;
+			height: 1px;
+			width: 13px;
+			
+		&::before
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			bottom: auto;
+			right: auto;
+			transform: translateX(-50%) translateY(-50%);
+			background-color: #fff;
+			transition: transform 0.3s;
+			height: 13px;
+			width: 1px;
+@keyframes pulse 
+	0% 
+		transform: (scale(.9));
+
+	70% 
+		transform: (scale(1));
+		box-shadow: 0 0 0 10px rgba(#4fc08d, 0.2);
+
+	100% 
+		transform: (scale(.9));
+		box-shadow: 0 0 0 0 rgba(#4fc08d, 0.2);
 
 		
 
@@ -274,7 +320,8 @@ a.head
 	from
 		left: 0
 	to
-		left: 370px
+		left: 74%
+
 @keyframes card
 	from
 		right: 0

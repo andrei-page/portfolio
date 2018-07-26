@@ -11,24 +11,27 @@ block main
 					nav(role='navigation') 
 						ul
 							li
-								a(href='#', data-content='The beginning') Home
+								a(href='index.html', data-content='The beginning') Home
 							li
-								a(href='#', data-content='Curious?') About
+								a(href='about.html', data-content='Curious?') About
 							li
-								a(href='#', data-content='I got game') Skills
+								a(href='portfolio.html', data-content='I got game') Portfolio
 							li
-								a(href='#', data-content='Only the finest') Works
-							
+								a(href='contact.html', data-content='Only the finest') Contact
 				section.home
 					.open-overlay#animate4
 						span.bar-top
 						span.bar-middle
 						span.bar-bottom
+			
 				h1.b-header__head 
-				.row#animate7
+				.row#animate7.no-gutters
 					.col-6#animate2
 						.b-about__box-img1
-							img(src="img/work.jpg", alt="work").b-about__img
+							.b-about__item
+								img(src="img/work.jpg", alt="work").b-about__img
+								.b-about__plus-box
+									.b-about__img-replace
 							.b-about__person-box#box1
 								.b-about__person-title Andrei V.
 								.b-about__person-description developer
@@ -54,7 +57,10 @@ block main
 					//- 
 					.col-6
 						.b-about__box-img
-							img(src="img/work-1.jpg", alt="work").b-about__img-1
+							.b-about__item
+								img(src="img/work-1.jpg", alt="work").b-about__img-1
+								.b-about__plus-box1
+									.b-about__img-replace
 							.b-about__person-box#box2
 								.b-about__person-title Daniil S.
 								.b-about__person-description design ui/ux
@@ -67,14 +73,14 @@ block main
 									
 					
 				
-				//- .b-header__box-item
-				//- 	form()
-				//- 		h1.b-header__input-title subscribe to news
-				//- 		.input-wrap
-				//- 			input#name.name(type='text', required='').b-header__input
-				//- 			label(for='E-mail:' type="email") Your email address:
-				//- 		a(href="#").b-header__btn.b-header__hire-btn
-				//- 			div subscribe
+				.b-header__box-item
+					form()
+						h1.b-header__input-title subscribe to news
+						.input-wrap
+							input#name.name(type='text', required='').b-header__input
+							label(for='E-mail:' type="email") Your email address:
+						a(href="#").b-header__btn.b-header__hire-btn
+							div subscribe
 				.b-header__icons
 					ul
 						a(href="#")

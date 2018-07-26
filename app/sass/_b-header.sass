@@ -217,7 +217,8 @@
 			letter-spacing: 0.06em
 			font-size: 0.9em
 		&:focus
-			border-color: #A52A2A
+			box-shadow: 0 0 2px rgba(79, 192, 141,1);
+			border: 1px solid rgba(79, 192, 141,1);
 	&__input-title
 		clear: both;
 		color: #333;
@@ -356,10 +357,8 @@
 		overflow: hidden;
 		&:after
 			content: "subscribe"
-			display: block
-			position: absolute
-			top: 0px
-			padding-left: 20px	
+			display: flex
+			justify-content: center
 		&:hover div
 			transform: translateZ(0)
 		div
@@ -376,7 +375,7 @@
 			transform: translateX(-101%);
 			&:after
 				color: #fff
-				clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+				// clip-path: polygon(0	 0,100% 0,100% 100%,0 100%);
 	&__btn-portfolio
 		display: inline-block;
 		text-decoration: none;
@@ -474,7 +473,7 @@
 		&:hover
 			color: transparent	
 	&__hire-btn
-		transition: all .5s cubic-bezier(0.6,0,0.5,1)
+		transition: all .8s cubic-bezier(.17,.67,1,1.23)
 		position: absolute
 		z-index: 10;
 		top: 220px
@@ -495,6 +494,7 @@
 		// 	top: -16px;
 		&:hover
 			color: transparent
+			text-decoration: none
 	&__hire-portfolio
 		transition: all .5s cubic-bezier(0.6,0,0.5,1)
 		position: absolute
