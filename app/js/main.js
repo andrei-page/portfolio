@@ -1,3 +1,4 @@
+
 //card about
 $('.b-about__plus-box').click(function() {
   $('.b-about__person-item,.b-about__link').toggleClass("active-animate");

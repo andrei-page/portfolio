@@ -140,8 +140,8 @@
 		top: 56%
 		left: 50%
 		transform: translate(-50%,-50%)
-		// +md
-		// 	padding-top: 350px
+		+md
+			width: 200px
 		// +sm
 		// 	padding-top: 300px
 		// +xs
@@ -181,6 +181,39 @@
 		margin-top: 115px
 		span 
 			display: inline-block
+	&__lang
+		position: fixed
+		bottom: -2%
+		right: 2.5rem
+	&__lang-title
+		z-index: 10
+		color: #fff;
+		+font-fallback('Montserrat')
+		font-size: .9em;
+		cursor: pointer
+		display: inline-block
+		font-weight: 300;
+		margin-right: 20px
+		letter-spacing: 0.1em;
+		transform: translateY(-40px);
+		word-wrap: break-word;
+		&:after
+			background: none repeat scroll 0 0 transparent;
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 1px;
+			left: 50%;
+			margin-top: 4px
+			position: absolute;
+			background: #fff
+			transition: width 0.3s ease 0s, left 0.3s ease 0s;
+			width: 0;
+		&:hover:after
+			width: 100%; 
+			left: 0; 
+		&:nth-child(2)
+			margin-right: 0
 
 	&__title
 		color: #fff;
@@ -246,9 +279,8 @@
 		transform: translateY(-40px);
 		font-weight: 300
 		text-transform: uppercase;
-		&:hover
-			text-decoration: none
-			color: red
+		
+		
 	&__icon-codepen
 		&:hover
 			color: gray

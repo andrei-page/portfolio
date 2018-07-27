@@ -19,13 +19,25 @@
 		color: #4fc08d
 		width: 380px
 		text-align: left
+		+sm
+			font-size: 1.2em
+			width: 270px
+		+xs
+			font-size: .9em
+			width: 270px
 	&__person-desc
-		font-size: 1.5em
+		font-size: 1.4em
 		+font-fallback('Montserrat')
 		font-weight: 600
 		color: #4fc08d
 		text-align: right
 		width: 380px
+		+sm
+			font-size: 1.2em
+			width: 270px
+		+xs
+			font-size: .9em
+			width: 200px
 	&__person-description
 		font-size: .7em
 		line-height: 14px
@@ -55,6 +67,8 @@
 		margin-left: auto
 		margin-right: auto
 		box-shadow: 0 10px 6px -6px #777;
+		+md
+			width: 92.1%
 	
 	&__img-1
 		width: 81.7%
@@ -62,6 +76,8 @@
 		margin-left: auto
 		margin-right: auto 
 		box-shadow: 0 10px 6px -6px #777
+		+md
+			width: 94%
 	
 
 	&__title 
@@ -90,6 +106,12 @@
 		top: 30%
 		right: 74%
 		display: none
+		+md
+			right: 75%
+		+sm
+			right: 22%
+		+xs
+			right: -22%
 	&__person-item
 		position: absolute
 		top: 30%
@@ -105,6 +127,10 @@
 		font-size: 1.5em
 		cursor: pointer
 		z-index: 10
+		+sm
+			right: 36%
+		+xs
+			right: 52%
 		&:after
 			position: absolute;
 			left: 15px;
@@ -130,6 +156,13 @@
 		font-size: 1.5em
 		cursor: pointer
 		z-index: 10
+		+md
+			left: 5%
+		+sm
+			left: -2%
+		+xs
+			left: 3%
+			top: -5%
 		&:after
 			position: absolute;
 			left: 15px;
@@ -165,7 +198,9 @@
 		z-index: 2;
 		transition: background-color 0.3s;
 		animation: pulse 1.4s infinite cubic-bezier(.42,.97,.52,1.49)
-		
+		+md
+			top: 81%
+			right: 10%
 		&::after
 			content: '';
 			position: absolute;
@@ -197,7 +232,7 @@
 
 	70% 
 		transform: (scale(1));
-		box-shadow: 0 0 0 10px rgba(#4fc08d, 0.2);
+		box-shadow: 0 0 0 5px rgba(#4fc08d, 0.2);
 
 	100% 
 		transform: (scale(.9));
