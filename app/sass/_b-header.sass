@@ -132,13 +132,12 @@
 			width: 100%
 			position: relative
 	&__item
-		
 		display: flex
 		justify-content: center
 		align-items: center
 		flex-direction: column
 		position: absolute
-		top: 50%
+		top: 56%
 		left: 50%
 		transform: translate(-50%,-50%)
 		// +md
@@ -184,19 +183,21 @@
 			display: inline-block
 
 	&__title
-		
 		color: #fff;
 		+font-fallback('Montserrat')
 		font-size: 2rem;
 		font-weight: 300;
+		animation: up-animate 1s cubic-bezier(0.28, 0, 0.18, 1)
 		letter-spacing: 0.1em;
+		transform: translateY(-40px);
 		line-height: 50px;
 		text-align: center
 		text-transform: uppercase;
 		word-wrap: break-word;
+
 	&__box-item
 		// border-top: 1px solid #f2f2f2
-		padding: 10% 7% 13% 7%
+		padding: 70px 50px 90px 50px
 		position: relative
 		animation-duration: 2s
 	&__input
@@ -240,6 +241,9 @@
 		font-size: 0.6em;
 		letter-spacing: 0.2em;
 		line-height: 20px
+		animation: up-animate 1.2s cubic-bezier(0.28, 0, 0.18, 1)
+		letter-spacing: 0.1em;
+		transform: translateY(-40px);
 		font-weight: 300
 		text-transform: uppercase;
 		&:hover
@@ -476,7 +480,7 @@
 		transition: all .8s cubic-bezier(.17,.67,1,1.23)
 		position: absolute
 		z-index: 10;
-		top: 220px
+		top: 200px
 		+lg
 			top: 155px
 		+md
@@ -704,3 +708,10 @@ svg path
 			#arrow-line2
 				transform: scaleX(1);
 				fill: red
+
+@keyframes up-animate
+	from
+		transform: translateY(0px)
+		opacity: 0;
+	to
+		transform: translateY(-40px);

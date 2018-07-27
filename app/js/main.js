@@ -235,15 +235,15 @@ loaderSpinner();
 //       $('#animate1').addClass('animated fadeInUp');
 //       $('#animate2').addClass('animated fadeInRight');
 //       $('#animate3').addClass('animated fadeInLeft');
-//       $('#animate4').addClass('animated fadeInUp');
-//       $('#animate5').addClass('animated fadeInDown');
+//       $('#animate4').addClass('animated fadeInDown');
+//       $('#animate5').addClass('animated fadeInUp');
 //       $('#animate6').addClass('animated fadeInDown');
 //       $('#animate7').addClass('animated fadeInLeft');
 //       $('#animate8').addClass('animated fadeInRight');
 //       $('#animate9').addClass('animated fadeInRight');
 //       $('#animate10').addClass('animated fadeInLeft');
 // });
-//scroll top
+// //scroll top
 $(function() {
  
 $(window).scroll(function() {

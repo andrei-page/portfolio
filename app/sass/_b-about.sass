@@ -318,15 +318,18 @@ a.head
 	animation: leave 1s cubic-bezier(.42,.97,.52,1.49)
 @keyframes animate
 	from
-		left: 0
+		transform: translateY(100px)
+		opacity: 0
 	to
-		left: 74%
+		transform: translateY(0)
+		
 
 @keyframes card
 	from
-		right: 0
+		transform: translateY(100px)
+		opacity: 0
 	to
-		right: 76%
+		transform: translateY(0)
 @keyframes leave
 	from
 		transform: translateY(-200px);
