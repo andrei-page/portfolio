@@ -109,7 +109,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0
-		width: 41.5%;
+		width: 41.65%;
 		+md
 			width: 100%
 			position: static
@@ -131,6 +131,7 @@
 		+md
 			width: 100%
 			position: relative
+
 	&__item
 		display: flex
 		justify-content: center
@@ -430,11 +431,11 @@
 		letter-spacing: 5.2px;
 		overflow: hidden;
 		&:after
-			content: "view site"
+			content: "view"
 			display: block
 			position: absolute
 			top: 0px
-			padding-left: 30px	
+			padding-left: 50px	
 		&:hover div
 			transform: translateZ(0)
 		div
@@ -444,8 +445,11 @@
 			color: #000
 			text-transform: uppercase;
 			white-space: nowrap;
+			position: absolute
+			left: 0
+			top: 0
 			padding-left: 5px
-			transform: translateX(-101%);
+			transform: translateX(-110%);
 			&:after
 				color: #fff
 				clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
@@ -470,7 +474,7 @@
 			content: "view"
 			display: block
 			position: absolute
-			top: 0px
+			top: -20px
 			padding-left: 50px	
 		&:hover div
 			transform: translateZ(0)
@@ -535,7 +539,8 @@
 		transition: all .5s cubic-bezier(0.6,0,0.5,1)
 		position: absolute
 		z-index: 10;
-		top: 87%
+		top: 75%
+		left: -45px
 		
 		// &:before
 		// 	content: "";

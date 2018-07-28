@@ -1,184 +1,9 @@
-.b-slide
-	&__title
-		height: 532px 
-	
-	&__text
-		+font-fallback('Montserrat')
-		font-weight: bold
-		color: red
-		font-size: .6em
-		margin-top: 10px
-		
-
-#slider-1 
-	width: 500px
-	height: 300px
-	display: block
-	margin-top: 90px
-
-#slider-2
-	width: 200px
-	height: 300px
-	display: block
-	position: absolute
-	right: 10px
-	top: 140px
-
-	
-	// position: relative
-	// display: block
-	// left: 350px
-	// top: 120px
-#slider-3
-	width: 100%
-	height: 100%
-	position: relative
-	margin-top: 25px
-	padding: 0
-
-// #slider-4
-// 	position: relative
-// 	left: 41%
-// 	width: 400px;
-// 	height: 350px
-// 	top: -83px
-.slides
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	height: 70vh
-	img 
-		width: 100%;
-		position: relative
-		display: block;
-		
-		
-
-
-
-.flickity-enabled:focus  
-	outline: none; 
-
-.flickity-viewport 
-	position: relative;
-	height: 100%;
-
-
-.flickity-slider 
-	position: absolute;
-	width: 100%;
-	height: 100%;
-
-// .flickity-enabled.is-draggable
-// 	tap-highlight-color: transparent;
-// 	user-select: none;
-
-// .flickity-enabled.is-draggable .flickity-viewport 
-// 	cursor: move;
-// 	cursor: grab;
-// .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down 
-// 	cursor: -webkit-grabbing;
-// 	cursor: grabbing;
-
-
-.gallery-cell 
-	width: 100%;
-	height: 100%
-.btn-prev__arrow
-	background: none;
-	border: none;
-	position: absolute;
-	width: 60px;
-	height: 20px;
-	padding: 0;
-	right: 50px
-	bottom: 55px
-	&:focus
-		outline: none;
-	svg
-		display: block;
-		width: 60px;
-		height: 20px;
-		transform: rotate(180deg)
-		#arrow-line
-			transition: all 0.3s ease-out;
-			transform-origin: right bottom
-		#arrow-line2
-			transition: all 0.3s ease-out;
-	&:hover
-		svg
-			#arrow-line 
-				transform: scaleX(1.5);
-				fill: red
-			#arrow-line2
-				transform: scaleX(1);
-				fill: red
-// .btn-prev
-// 	background: none;
-// 	border: none;
-// 	position: absolute
-// 	z-index: 10
-// 	left: 60%
-// 	top: 0%
-// 	width: 60px;
-// 	height: 56px;
-// 	padding: 0;
-
-// 	&:focus
-// 		outline: none;
-// 	svg
-// 		display: block;
-// 		width: 60px;
-// 		height: 20px;
-// 		transform: rotate(180deg)
-// 		#arrow-line
-// 			transition: all 0.1s ease-out;
-// 			transform-origin: right bottom
-// 		#arrow-line2
-			
-// 			transition: all 0.1s ease-out;
-// 	&:hover
-// 		svg
-// 			#arrow-line 
-// 				transform: scaleX(1.3);
-// 			#arrow-line2
-// 				transform: scaleX(1);
-.btn-next__arrow
-	background: none;
-	border: none;
-	position: absolute;
-	right: 0
-	bottom: 25px;  
-	width: 60px;
-	height: 20px;
-
-	padding: 0;
-	&:focus
-		outline: none;
-	svg
-		display: block;
-		width: 60px;
-		height: 20px;
-		#arrow-line
-			transition: all 0.2s ease-out;
-			transform-origin: right bottom
-		#arrow-line1
-			transition: all 0.2s ease-out;
-	&:hover
-		svg
-			#arrow-line 
-				transform: scaleX(1.5);
-				fill: red
-			#arrow-line1
-				transform: scaleX(1);
-				fill: red
 .btn-next 
 	background: none;
 	border: none;
-	position: absolute
-	top: 480px
-	left: 450px
 	z-index: 10
+	position: absolute
+	right: 18.5%
 	width: 55px;
 	height: 51px;
 	padding: 0;
@@ -197,10 +22,70 @@
 		svg
 			#arrow-line 
 				transform: scaleX(1.5);
-				fill: red
+				fill: #4fc08d
 			#arrow-line1
 				transform: scaleX(1);
-				fill: red
+				fill: #4fc08d
 
+.item
+	opacity: 0.9;
+	transition: 1s cubic-bezier(.17,.67,1,1.23);
+	margin: 0 20px;
+	transform: scale(.7);
 
- 
+.active .item
+	opacity: 1;
+	transform: scale(1);
+
+.owl-carousel
+	margin-top: 150px
+	margin-bottom: 150px
+.owl-item 
+	display: block
+	backface-visibility: hidden
+    transform: translateZ(0) scale(1.0, 1.0) !important;
+.inner
+	position: absolute; 
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	text-align: center;
+
+.inner h1
+	font-size: 1.4em
+	+font-fallback('Montserrat')
+	font-weight: 600
+	color: #222222
+	top: -100px
+	text-decoration: none;
+	// animation: text-inner 1s cubic-bezier(.17,.67,1,1.23)
+	position: absolute
+	left: -50px
+.inner h5
+	font-size: 1em
+	+font-fallback('Montserrat')
+	font-weight: 600
+	color: #4fc08d
+	top: -70px
+	text-decoration: none;
+	// animation: text-inner 1s cubic-bezier(.17,.67,1,1.23)
+	position: absolute
+	left: -20px
+@keyframes text-inner
+	from
+		transform: translateY(40px)
+		opacity: 0
+	to
+		transform: translateX(0px)
+// .owl-carousel:after
+// 	content: ""; 
+// 	display: block; 
+// 	position: absolute; 
+// 	width: 8%; 
+// 	top: 0; 
+// 	bottom: 0;
+// 	left: 50%;
+// 	margin-left: -4%;
+// 	pointer-events: none;
+// 	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/aett_logo_slider.png) no-repeat center 50%; 
+// 	background-size: 100% auto;
