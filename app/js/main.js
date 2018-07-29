@@ -24,6 +24,21 @@ $('.b-about__close').click(function() {
   $(".b-about__plus-box1").toggleClass("active").removeClass("remove");
 });
 
+//portfolio
+$('.b-portfolio__box-item').click(function() {
+  $('.owl-carousel').animate({position: "absolute",
+  top: "1000px",transition: "cubic-bezier(.42,.97,.52,1.49)"},function(){
+    $(this).toggleClass("remove");
+  })
+ $(".b-portfolio__item").fadeIn(1000);
+ $('.b-portfolio__position').fadeIn(1000);
+});
+
+$('.b-portfolio__btn').click(function() {
+  $('.b-portfolio__position').fadeOut();
+  $('.owl-carousel').css("display","block").css("top","0px").removeClass("remove");
+});
+
 //animate header-text
 var totaldiv = 0;
 var clickcount = 0;
@@ -238,7 +253,7 @@ loaderSpinner();
 //       $('#animate3').addClass('animated fadeInLeft');
 //       $('#animate4').addClass('animated fadeInDown');
 //       $('#animate5').addClass('animated fadeInUp');
-//       $('#animate6').addClass('animated fadeInDown');
+//       $('#animate6').addClass('animated fadeInUp');
 //       $('#animate7').addClass('animated fadeInLeft');
 //       $('#animate8').addClass('animated fadeInRight');
 //       $('#animate9').addClass('animated fadeInRight');

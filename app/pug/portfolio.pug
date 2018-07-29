@@ -6,7 +6,7 @@ block main
 	//- 	.loading_name Andrey V.
 	.content
 		.row.no-gutters#portfolio
-			.col-md-7.b-slide__box
+			.col-md-7.b-slide__box.order-last.order-md-6
 				.overlay-navigation
 					nav(role='navigation') 
 						ul
@@ -24,28 +24,54 @@ block main
 						span.bar-top
 						span.bar-middle
 						span.bar-bottom
-				.owl-carousel
+				.b-portfolio__item
+					.row.b-portfolio__position
+						.col-7
+							img(src='img/posh.jpg', alt='posh').b-portfolio__img
+						.col-5
+							.b-portfolio__item-title Posh make-up
+							.b-portfolio__item-text training landing page which provides makeup services for girls at various events
+							.b-portfolio__item-nav Technologies:
+								ul
+									li
+										span Sass/Scss
+									li 
+										span Pug
+									li 
+										span Jquery animate
+									li 
+										span Gulp,Webpack
+							a(href="http://posh-make.surge.sh",target="_blank").b-header__hire-portfolio.b-header__btn-portfolio
+								div view
+						span.b-portfolio__btn
+				.owl-carousel#animate6
 					.item
 						a(href='#')
 							img(src='img/posh.jpg', alt='posh')
 							.inner 
 								h1 Posh make-up
+								.b-portfolio__box-item
+									.b-portfolio__img-replace
 								//- h5 #pug #sass #scss
-							button.b-header__hire-portfolio.b-header__btn-portfolio
-								div view
+							//- button.b-header__hire-portfolio.b-header__btn-portfolio
+							//- 	div view
 					.item
 						a(href='#')
 							img(src='img/renome.jpg', alt='renome')
 							.inner
-								h1 Renome restaurant
-							button.b-header__hire-portfolio.b-header__btn-portfolio
-								div view
+								h1 Renome restaraunt
+								.b-portfolio__box-item
+									.b-portfolio__img-replace.b-portfolio__img-mod
+							//- button.b-header__hire-portfolio.b-header__btn-portfolio
+							//- 	div view
 								//- h5 #pug #sass #scss
 					.item
 						a(href='#')
 							img(src='img/renome.jpg', alt='renome')
 							.inner
 								h1 The Erling Bag
+								.b-portfolio__box-item
+									.b-portfolio__img-replace
 					
 				button.btn-next
 					svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
@@ -126,19 +152,21 @@ block main
 								i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
 				
 				//- 	i.fas.fa-angle-right.fa-8x.b-header__right
-			.col-md-5
-				.b-header__bg-portfolio#animate2
+			.col-md-5.order-6.order-md-6
+				.b-header__bg-portfolio
 					.b-header__overlay
 					.b-header__item.b-header__item-portfolio
 						.b-header__title Portfolio
 						.b-header__text #websites
-						a(href="#").fullscreenTrigger
-							svg(xmln
-							s='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='20px', height='20px', viewbox='0 0 20 20', version='1.1').fullscreenTrigger-open
-								path#fullscreen(fill="#fff",d='M6,0 L6,2 L2,2 L2,6 L0,6 L0,0 L6,0 Z M20,6 L18,6 L18,2 L14,2 L14,-6.58092909e-16 L20,4.4408921e-16 L20,6 Z M14,20 L14,18 L18,18 L18,14 L20,14 L20,20 L14,20 Z M3.6739404e-16,14 L2,14 L2,18 L6,18 L6,20 L0,20 L3.6739404e-16,14 Z')
-							svg(xmlns='http://www.w3.org/2000/svg', width='21', height='21', viewbox='0 0 20 20').fullscreenTrigger-close
-								path(fill="#fff",fill-rule='evenodd', d='M793,866 L793,864 L797,864 L797,860 L799,860 L799,866 L793,866 Z M807,860 L809,860 L809,864 L813,864 L813,866 L807,866 L807,860 Z M813,874 L813,876 L809,876 L809,880 L807,880 L807,874 L813,874 Z M799,880 L797,880 L797,876 L793,876 L793,874 L799,874 L799,880 Z', transform='translate(-793 -860)')
-						
+						//- a(href="#").fullscreenTrigger
+						//- 	svg(xmln
+						//- 	s='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='20px', height='20px', viewbox='0 0 20 20', version='1.1').fullscreenTrigger-open
+						//- 		path#fullscreen(fill="#fff",d='M6,0 L6,2 L2,2 L2,6 L0,6 L0,0 L6,0 Z M20,6 L18,6 L18,2 L14,2 L14,-6.58092909e-16 L20,4.4408921e-16 L20,6 Z M14,20 L14,18 L18,18 L18,14 L20,14 L20,20 L14,20 Z M3.6739404e-16,14 L2,14 L2,18 L6,18 L6,20 L0,20 L3.6739404e-16,14 Z')
+						//- 	svg(xmlns='http://www.w3.org/2000/svg', width='21', height='21', viewbox='0 0 20 20').fullscreenTrigger-close
+						//- 		path(fill="#fff",fill-rule='evenodd', d='M793,866 L793,864 L797,864 L797,860 L799,860 L799,866 L793,866 Z M807,860 L809,860 L809,864 L813,864 L813,866 L807,866 L807,860 Z M813,874 L813,876 L809,876 L809,880 L807,880 L807,874 L813,874 Z M799,880 L797,880 L797,876 L793,876 L793,874 L799,874 L799,880 Z', transform='translate(-793 -860)')
+					.b-header__lang
+						.b-header__lang-title eng
+						.b-header__lang-title rus
 						
 						
 					
