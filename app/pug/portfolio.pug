@@ -26,11 +26,29 @@ block main
 						span.bar-bottom
 				.b-portfolio__item
 					.row.b-portfolio__position
-						.col-7
-							img(src='img/posh.jpg', alt='posh').b-portfolio__img
-						.col-5
+						.col-lg-7.col-md-12.b-portfolio__flex
+							ul#myTab.nav.nav-tabs.order-last(role='tablist')
+								li.nav-item
+									a#home-tab(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') 
+										i.fas.fa-desktop.b-porfolio__svg
+								li.nav-item
+									a#profile-tab(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false')
+										i.fas.fa-tablet-alt
+								li.nav-item
+									a#contact-tab(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false')
+										i.fas.fa-mobile-alt
+							#myTabContent.tab-content.order-first
+								#home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab') 
+									img(src='img/posh_psd.png', alt='posh').b-portfolio__img
+								#profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab') 
+									img(src='img/renome.jpg', alt='posh').b-portfolio__img
+								#contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+									img(src='img/renome.jpg', alt='posh').b-portfolio__img
+
+
+						.col-lg-5.col-md-12
 							.b-portfolio__item-title Posh make-up
-							.b-portfolio__item-text training landing page which provides makeup services for girls at various events
+							.b-portfolio__item-text landing page which provides makeup services for girls at various events.
 							.b-portfolio__item-nav Technologies:
 								ul
 									li
@@ -46,95 +64,33 @@ block main
 						span.b-portfolio__btn
 				.owl-carousel#animate6
 					.item
-						a(href='#')
-							img(src='img/posh.jpg', alt='posh')
-							.inner 
-								h1 Posh make-up
-								.b-portfolio__box-item
-									.b-portfolio__img-replace
+						img(src='img/posh.jpg', alt='posh')
+						.inner 
+							h1 Posh make-up
+							.b-portfolio__box-item
+								.b-portfolio__img-replace
 								//- h5 #pug #sass #scss
 							//- button.b-header__hire-portfolio.b-header__btn-portfolio
 							//- 	div view
 					.item
-						a(href='#')
-							img(src='img/renome.jpg', alt='renome')
-							.inner
-								h1 Renome restaraunt
-								.b-portfolio__box-item
-									.b-portfolio__img-replace.b-portfolio__img-mod
+						img(src='img/renome.jpg', alt='renome')
+						.inner
+							h1 Renome restaraunt
+							.b-portfolio__box-item
+								.b-portfolio__img-replace.b-portfolio__img-mod
 							//- button.b-header__hire-portfolio.b-header__btn-portfolio
 							//- 	div view
 								//- h5 #pug #sass #scss
 					.item
-						a(href='#')
-							img(src='img/renome.jpg', alt='renome')
-							.inner
-								h1 The Erling Bag
-								.b-portfolio__box-item
-									.b-portfolio__img-replace
-					
+						img(src='img/renome.jpg', alt='renome')
+						.inner
+							h1 The Erling Bag
+							.b-portfolio__box-item
+								.b-portfolio__img-replace
 				button.btn-next
 					svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
 						path#arrow-line(fill='#231F20', d='M0 5.9h28.7v1H0z')
 						path#arrow-line1(fill='#231F20', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
-				//- button.btn-prev
-				//- 	svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
-				//- 		path#arrow-line(fill='#231F20', d='M0 5.9h28.7v1H0z')
-				//- 		path#arrow-line2(fill='#231F20', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
-
-				//- h1.b-header__head.b-slide__title#animate3 Portfolio
-				//- 	#slider-1
-				//- 		ul.slides
-				//- 			li.gallery-cell
-				//- 				img(src="img/renome.jpg", alt="1")
-				//- 				a(href="https://renome.surge.sh/",target="_blank").b-header__btn-port.b-header__hire-port
-				//- 					div view
-				//- 				.menu-container
-				//- 					.menu-wrapper
-				//- 						ul.menu-list.accordion
-				//- 							li#nav1.toggle.accordion-toggle
-				//- 								span.icon-plus
-				//- 									a.menu-link 
-				//- 							// accordion-toggle
-				//- 							ul.menu-submenu.accordion-content
-				//- 								li
-				//- 									a.head(href='#') Html,css,js,jquery,bootstrap 4
-												
-											
-				//- 							// menu-submenu accordon-content
-											
-				//- 							// menu-submenu accordon-content
-
-				//- 			li.gallery-cell
-				//- 				img(src="img/posh.jpg", alt="1")
-				//- 				a(href="https://posh-make.surge.sh",target="_blank").b-header__btn-port.b-header__hire-port
-				//- 					div view
-				//- 				.menu-container
-				//- 					.menu-wrapper
-				//- 						ul.menu-list.accordion
-				//- 							li#nav1.toggle.accordion-toggle
-				//- 								span.icon-plus
-				//- 									a.menu-link
-				//- 							// accordion-toggle
-				//- 							ul.menu-submenu.accordion-content
-				//- 								li
-				//- 									a.head Html,css,js,jquery,bootstrap 4
-												
-											
-				//- 							// menu-submenu accordon-content
-											
-				//- 							// menu-submenu accordon-content
-				//- 	#slider-2
-				//- 		ul.slides
-				//- 			li.gallery-cell
-				//- 				img(src="img/renome.jpg", alt="1")
-				//- 			li.gallery-cell
-				//- 				img(src="img/posh.jpg", alt="1")
-						
-							
-			
-
-								
 				.b-header__icons
 					ul
 						a(href="#")
@@ -168,8 +124,3 @@ block main
 						.b-header__lang-title eng
 						.b-header__lang-title rus
 						
-						
-					
-				
-			//- #toTop
-			//- 	i.fas.fa-level-up-alt
