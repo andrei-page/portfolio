@@ -69,7 +69,12 @@
 		box-shadow: 0 10px 6px -6px #777;
 		+md
 			width: 92.1%
-	
+	&__img-box
+		width: 65%
+		display: block
+		margin-left: auto
+		margin-right: auto
+		box-shadow: 0 10px 6px -6px #777;
 	&__img-1
 		width: 81.7%
 		display: block
@@ -186,7 +191,64 @@
 	
 	&__item
 		position: relative
-	
+	&__btn
+		display: inline-block;
+		text-decoration: none;
+		background-color: #000000
+		text-align: left;
+		position: relative;
+		color: #fff
+		+font-fallback('Lato')
+		font-size: 10px;
+		font-weight: 700;
+		line-height: 34px;
+		width: 130px
+		height: 34px	
+		text-transform: uppercase;
+		/* Text style for "A, bout" */
+		letter-spacing: 5.2px;
+		overflow: hidden;
+		&:after
+			content: "profile"
+			display: flex
+			justify-content: center
+		&:hover div
+			transform: translateZ(0)
+		div
+			transition: all .5s
+			display: inline-block;
+			background-color: #fff
+			color: #000
+			text-transform: uppercase;
+			white-space: nowrap;
+			padding-left: 5px
+			position: absolute	
+			top: -2px
+			padding-top: 3px	
+			transform: translateX(-101%);
+			&:after
+				color: #fff
+				// clip-path: polygon(0	 0,100% 0,100% 100%,0 100%);
+	&__hire-btn
+		transition: all .5s cubic-bezier(0.6,0,0.5,1)
+		margin-top: 7%
+		margin-left: 57%
+		z-index: 10
+		&:hover
+			color: transparent
+			text-decoration: none
+	&__card--first
+		margin: 20%	0
+	&__item-title
+		font-size: 1.1em;
+		+font-fallback('Montserrat')
+		font-weight: 600;
+		color: #222222;
+		padding-top: 4%
+		display: flex
+		justify-content: center
+		// animation: animate-text 1s cubic-bezier(.42,.97,1,1.49)
+		
 	&__img-replace
 		position: absolute
 		display: block;
@@ -341,6 +403,8 @@ a.head
 .section.active 
 	display: block;
 
+#card2
+	display: none
 
 .active 
 	display: block

@@ -24,8 +24,14 @@ block main
 						span.bar-middle
 						span.bar-bottom
 			
-				h1.b-header__head 
-				.row.no-gutters
+				#card1.b-about__card--first
+					.row
+						.col-6
+							img(src="img/work.jpg", alt="").b-about__img-box
+							.b-about__item-title Vivdenko A.
+						.col-6
+							
+				.row.no-gutters#card2
 					.col-6
 						.b-about__box-img1
 							.b-about__item
@@ -41,6 +47,8 @@ block main
 									| Hello, <br>My name is Andrei. <br> I live in Ukraine and i 
 									span.b-about__box-bg am junior frontend developer. 
 									|<br> I love coding as all of you do.
+								.b-about__btn.b-about__hire-btn
+									div view
 								span.b-about__close1
 						//- .b-about__link
 						//- 	ul

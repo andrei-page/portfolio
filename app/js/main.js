@@ -38,7 +38,11 @@ $('.b-portfolio__btn').click(function() {
   $('.b-portfolio__position').fadeOut();
   $('.owl-carousel').css("display","block").css("top","0px").removeClass("remove");
 });
-
+// // box-card for person
+// $('.b-about__btn').click(function() {
+//   $('#card1').toggleClass("active-animate");
+//   $('#card2').fadeOut();
+// });
 //animate header-text
 var totaldiv = 0;
 var clickcount = 0;
