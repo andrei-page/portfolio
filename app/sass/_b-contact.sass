@@ -7,10 +7,15 @@
 	&__item-contact
 		+xs
 			padding-top: 65%
+	&__btn-arrow
+		position: absolute
+		right: 10px
+		top: 9px
+		font-size: 1.8em
 	&__btn
 		display: inline-block;
 		text-decoration: none;
-		background-color: #b97f6d
+		background-color: rgba(56, 138, 107, .8);
 		text-align: left;
 		position: relative;
 		color: #fff
@@ -30,6 +35,7 @@
 			position: absolute
 			top: 0px
 			padding-left: 30px
+		
 		&:hover div
 			transform: translateZ(0)
 		div
@@ -106,7 +112,7 @@ input,textarea
 	position: absolute /* Даем возможность делать позиционирование, внутри данного элемента */
 	overflow: hidden; /* Все что выходит за пределы - скрываем */
 	width: 130px; /* Задаем ширину кнопки выбора файла */
-	background: #A52A2A
+	background: #388a6b
 	height: 35px
 	color: #fff
 	top: 110%

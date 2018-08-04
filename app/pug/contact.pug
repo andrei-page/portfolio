@@ -41,9 +41,12 @@ block main
 							.file-span Select a file :
 
 					button.b-contact__btn.b-contact__hire-btn.b-contact__btn#btn-contact
+						i.fas.fa-long-arrow-alt-right.b-contact__btn-arrow
 						div send
+							
+
 						
-			iframe(src='https://snazzymaps.com/embed/79106', width='100%', height='400px', style='border:none;')
+			iframe(src='https://snazzymaps.com/embed/79106', width='100%', height='320px', style='border:none;')
 
 
 			.b-header__icons
@@ -59,11 +62,12 @@ block main
 							i.fab.fa-github.b-header__social-icon.b-header__icon-git
 					a(href="#")
 						li
-							i.fa.fa-fire.b-header__social-icon.b-header__icon-fire
-
+							i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
 					a(href="#")
 						li
-							i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
+							i.fab.fa-instagram.b-header__social-icon.b-header__icon-fire
+
+					
 			//- 	i.fas.fa-angle-right.fa-8x.b-header__right
 		.col-md-5
 			.b-header__bg-contact#animate2
@@ -71,12 +75,9 @@ block main
 				.b-header__item.b-contact__item-contact
 					.b-header__title Contact
 					a(href="#").b-header__text #write us a letter
-					a(href="#").fullscreenTrigger
-						svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='20px', height='20px', viewbox='0 0 20 20', version='1.1').fullscreenTrigger-open
-							path#fullscreen(fill="#fff",d='M6,0 L6,2 L2,2 L2,6 L0,6 L0,0 L6,0 Z M20,6 L18,6 L18,2 L14,2 L14,-6.58092909e-16 L20,4.4408921e-16 L20,6 Z M14,20 L14,18 L18,18 L18,14 L20,14 L20,20 L14,20 Z M3.6739404e-16,14 L2,14 L2,18 L6,18 L6,20 L0,20 L3.6739404e-16,14 Z')
-						svg(xmlns='http://www.w3.org/2000/svg', width='21', height='21', viewbox='0 0 20 20').fullscreenTrigger-close
-							path(fill="#fff",fill-rule='evenodd', d='M793,866 L793,864 L797,864 L797,860 L799,860 L799,866 L793,866 Z M807,860 L809,860 L809,864 L813,864 L813,866 L807,866 L807,860 Z M813,874 L813,876 L809,876 L809,880 L807,880 L807,874 L813,874 Z M799,880 L797,880 L797,876 L793,876 L793,874 L799,874 L799,880 Z', transform='translate(-793 -860)')
-					//- .contain
+				.b-header__lang
+					.b-header__lang-title eng
+					.b-header__lang-title rus
 					//- 	input.t-input(type='text', placeholder="Search..") 
 					//- 	svg.mySvg.svg-input
 					//- 		path.magnifier( d='M254 154 A 14 14 90 1 1 254.1 153.9 L 270 170', stroke='#fff' stroke-width='1', stroke-linejoin='round', fill='none')
