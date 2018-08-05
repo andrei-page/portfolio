@@ -223,7 +223,8 @@
 			left: 0; 
 		&:nth-child(2)
 			margin-right: 0
-
+	&__box-color
+		background: #f4f4f4
 	&__title
 		color: #fff;
 		+font-fallback('Montserrat')
@@ -239,7 +240,7 @@
 
 	&__box-item
 		// border-top: 1px solid #f2f2f2
-		padding: 70px 50px 90px 50px
+		padding: 150px 50px 90px 50px
 		position: relative
 		animation-duration: 2s
 		+sm
@@ -252,30 +253,39 @@
 		margin-left: auto
 		margin-right: auto
 		margin: 1px
-		padding: 0.64615385em 1.15384615em;
-		+font-fallback("Source Sans Pro")
+		padding: 0.42em .5em;
+		+font-fallback('Montserrat')
+		border-radius: 2px
 		font-size: 1em
 		+sm
 			width: 100%
 		&::placeholder
-			color: #555
-			+font-fallback("Source Sans Pro")
+			color: rgba(111, 168, 148,1)
+			+font-fallback('Montserrat')
 			letter-spacing: 0.06em
 			font-size: 0.9em
 		&:focus
-			box-shadow: 0 0 2px rgba(79, 192, 141,1);
-			border: 1px solid rgba(79, 192, 141,1);
+			box-shadow: 0 0 1px rgba(79, 192, 141,1);
+			border: 1px solid $green;
 	&__input-title
 		clear: both;
 		color: #333;
-		font-family: "Roboto", sans-serif;
-		font-size: 14px;
-		font-weight: 700;
+		font-size: .9em;
+		font-weight: 700
+		+font-fallback('Montserrat')
 		letter-spacing: 0.1em;
 		line-height: 1.7;
 		margin-bottom: 1.5em;
 		margin-top: 0;
 		text-transform: uppercase;
+		&:after
+			content: "";
+			display: inline-block;
+			background-color: $green
+			width: 20px;
+			height: 2px;
+			vertical-align: middle;
+			margin-left: 10px;
 	// &__box-top
 	// 	margin-top: -197px
 
@@ -677,10 +687,7 @@ iframe
 	height: 300px;
 	z-index: 1
 
-svg path
-	width: 10px
-	height: 10px
-	display: block
+
 .t-input 
 	position: absolute;
 	top: -370px;

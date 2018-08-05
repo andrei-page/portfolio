@@ -9,32 +9,31 @@
 			padding-top: 65%
 	&__btn-arrow
 		position: absolute
-		right: 10px
+		right: 12px
 		top: 9px
-		font-size: 1.8em
+		font-size: 1.4em
 	&__btn
 		display: inline-block;
 		text-decoration: none;
-		background-color: rgba(56, 138, 107, .8);
+		background-color: $green
 		text-align: left;
 		position: relative;
 		color: #fff
-		+font-fallback('Lato')
-		font-size: 10px;
-		font-weight: 700;
+		+font-fallback('Montserrat')
+		font-size: .73em;
 		line-height: 34px;
-		width: 129px
-		height: 34px	
-		text-transform: uppercase;
+		font-weight: 500
+		width: 125px
+		height: 34px
 		/* Text style for "A, bout" */
-		letter-spacing: 5.2px;
+		letter-spacing: 2.7px;
 		overflow: hidden;
 		&:after
 			content: "send"
 			display: block
 			position: absolute
 			top: 0px
-			padding-left: 30px
+			padding-left: 35px
 		
 		&:hover div
 			transform: translateZ(0)
@@ -42,8 +41,7 @@
 			transition: all .5s
 			display: inline-block;
 			background-color: #fff
-			color: #000
-			text-transform: uppercase;
+			color: #6fa894
 			padding-left: 5px
 			margin-top: -10px
 			position: absolute
@@ -75,8 +73,8 @@ input,textarea
 	position: absolute
 	top: 0px;
 	padding: 0.64615385em 1.15384615em;
-	+font-fallback("Source Sans Pro")
-	font-size: 1em
+	+font-fallback('Montserrat')
+	font-size: .8em
 	left: 0px;
 	z-index: -1
 	color: #999;
@@ -101,10 +99,11 @@ input,textarea
 	margin: 1px
 	
 	&::placeholder
-		color: #555
-		+font-fallback("Source Sans Pro")
+		color: $green
+		+font-fallback('Montserrat')
 		letter-spacing: 0.06em
 		font-size: 0.9em
+		font-weight: 700
 	&:focus
 		border-color: #A52A2A
 
@@ -118,11 +117,9 @@ input,textarea
 	top: 110%
 	right: 12%
 	text-align: center;
-	+font-fallback('Source Sans Pro')
-	font-weight: 700
-	font-size: 0.7em
-	letter-spacing: 2.5px
-	text-transform: uppercase
+	font-family: 'Stolzl-light'
+	font-size: .6em
+	letter-spacing: 5px
 	+sm
 		right: 0%
 	&:hover
@@ -139,9 +136,6 @@ input,textarea
 
 
 .file-upload .file-span
-	font-family: Lato, -apple-system, BlinkMacSystemFont, Raleway, Comfortaa, "Source Sans Pro", "Segoe UI", Lato, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	font-size: 10px;
-	line-height: 34px;
-	position: absolute
-	top: 0px
-	left: 15px	
+	line-height: 34px
+	display: flex
+	justify-content: center	

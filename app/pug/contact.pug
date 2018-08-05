@@ -19,8 +19,7 @@ block main
 			span.bar-middle
 			span.bar-bottom
 	.row.no-gutters#portfolio
-		.col-md-7
-			h1.b-header__head Contact
+		.col-md-7.order-last.order-md-6
 			.b-header__box-item#animate3
 				form()#form
 					h1.b-header__input-title write to us
@@ -35,10 +34,10 @@ block main
 						label(for='name') Message:
 
 				
-					.file-upload
-						label
-							input(type='file', name='file')
-							.file-span Select a file :
+					//- .file-upload
+					//- 	label
+					//- 		input(type='file', name='file')
+					//- 		.file-span file:
 
 					button.b-contact__btn.b-contact__hire-btn.b-contact__btn#btn-contact
 						i.fas.fa-long-arrow-alt-right.b-contact__btn-arrow
@@ -69,20 +68,15 @@ block main
 
 					
 			//- 	i.fas.fa-angle-right.fa-8x.b-header__right
-		.col-md-5
-			.b-header__bg-contact#animate2
+		.col-md-5.order-6.order-md-6
+			.b-header__bg-contact#animate8
 				.b-header__overlay
-				.b-header__item.b-contact__item-contact
+				.b-header__item
 					.b-header__title Contact
-					a(href="#").b-header__text #write us a letter
+					.b-header__text #write_us_letter
 				.b-header__lang
 					.b-header__lang-title eng
 					.b-header__lang-title rus
-					//- 	input.t-input(type='text', placeholder="Search..") 
-					//- 	svg.mySvg.svg-input
-					//- 		path.magnifier( d='M254 154 A 14 14 90 1 1 254.1 153.9 L 270 170', stroke='#fff' stroke-width='1', stroke-linejoin='round', fill='none')
-					//- 		path.input-line(d='M270 170 L10 170 L10 132 L270 132 L270 170', stroke='#fff', stroke-width='1', stroke-linecap='round', stroke-linejoin='round', fill='none')
-
 					
 			
 		
