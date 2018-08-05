@@ -1,87 +1,88 @@
 extends templates/layout
 
 block main
-	.overlay-navigation
-			nav(role='navigation') 
-				ul
-					li
-						a(href='index.html', data-content='The beginning') Home
-					li
-						a(href='about.html', data-content='about us') About
-					li
-						a(href='portfolio.html', data-content='check my portfolio') Portfolio
-					li
-						a(href='contact.html', data-content='sent a message') Contact
+	//- .loading
+	//- 	.loader#loading
+	//- 	.loading_name Andrey V.
+	.content
+		.overlay-navigation
+				nav(role='navigation') 
+					ul
+						li
+							a(href='index.html', data-content='The beginning') Home
+						li
+							a(href='about.html', data-content='about us') About
+						li
+							a(href='portfolio.html', data-content='check my portfolio') Portfolio
+						li
+							a(href='contact.html', data-content='sent a message') Contact
+						
+		section.home
+			.open-overlay
+				span.bar-top#animate7
+				span.bar-middle#animate8
+				span.bar-bottom#animate9
+		.row.no-gutters#portfolio
+			.col-md-7.order-last.order-md-6
+				.b-header__box-item.b-header__item-top
+					form()#form
+						h1.b-header__input-title#animate2 write to us
+						.input-wrap#animate3
+							input#name.name(type='text', required='').b-header__input
+							label(for='name') Name:
+						.input-wrap#animate4
+							input#name.name(type='text', required='').b-header__input
+							label(for='E-mail:' type="email") E-mail:
+						.input-wrap#animate5
+							textarea(name="", rows="5")#name.name(type='text', required='').b-header__input
+							label(for='name') Message:
+
 					
-	section.home
-		.open-overlay#animate4
-			span.bar-top
-			span.bar-middle
-			span.bar-bottom
-	.row.no-gutters#portfolio
-		.col-md-7.order-last.order-md-6
-			.b-header__box-item#animate3
-				form()#form
-					h1.b-header__input-title write to us
-					.input-wrap
-						input#name.name(type='text', required='').b-header__input
-						label(for='name') Name:
-					.input-wrap
-						input#name.name(type='text', required='').b-header__input
-						label(for='E-mail:' type="email") E-mail:
-					.input-wrap
-						textarea(name="", rows="5")#name.name(type='text', required='').b-header__input
-						label(for='name') Message:
+						//- .file-upload
+						//- 	label
+						//- 		input(type='file', name='file')
+						//- 		.file-span file:
 
-				
-					//- .file-upload
-					//- 	label
-					//- 		input(type='file', name='file')
-					//- 		.file-span file:
+						button.b-contact__btn.b-contact__hire-btn.b-contact__btn#animate6
+							i.fas.fa-long-arrow-alt-right.b-contact__btn-arrow
+							div send
+								
 
-					button.b-contact__btn.b-contact__hire-btn.b-contact__btn#btn-contact
-						i.fas.fa-long-arrow-alt-right.b-contact__btn-arrow
-						div send
 							
+				iframe(src='https://snazzymaps.com/embed/79106', width='100%', height='320px', style='border:none;')
+
+
+				.b-header__icons
+					ul
+						a(href="#")
+							li
+								i.fab.fa-codepen.b-header__social-icon.b-header__icon-codepen
+						a(href="#")
+							li
+								i.fab.fa-facebook-messenger.b-header__social-icon.b-header__icon-linkedin
+						a(href="#")
+							li
+								i.fab.fa-github.b-header__social-icon.b-header__icon-git
+						a(href="#")
+							li
+								i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
+						a(href="#")
+							li
+								i.fab.fa-instagram.b-header__social-icon.b-header__icon-fire
 
 						
-			iframe(src='https://snazzymaps.com/embed/79106', width='100%', height='320px', style='border:none;')
+				//- 	i.fas.fa-angle-right.fa-8x.b-header__right
+			.col-md-5.order-6.order-md-6
+				.b-header__bg-contact
+					.b-header__overlay
+					.b-header__item
+						.b-header__title Contact
+						.b-header__text #write_us_letter
+					.b-header__lange
+						.b-header__lang-titl eng
+						.b-header__lang-title rus
+						
 
-
-			.b-header__icons
-				ul
-					a(href="#")
-						li
-							i.fab.fa-codepen.b-header__social-icon.b-header__icon-codepen
-					a(href="#")
-						li
-							i.fab.fa-facebook-messenger.b-header__social-icon.b-header__icon-linkedin
-					a(href="#")
-						li
-							i.fab.fa-github.b-header__social-icon.b-header__icon-git
-					a(href="#")
-						li
-							i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
-					a(href="#")
-						li
-							i.fab.fa-instagram.b-header__social-icon.b-header__icon-fire
-
-					
-			//- 	i.fas.fa-angle-right.fa-8x.b-header__right
-		.col-md-5.order-6.order-md-6
-			.b-header__bg-contact#animate8
-				.b-header__overlay
-				.b-header__item
-					.b-header__title Contact
-					.b-header__text #write_us_letter
-				.b-header__lang
-					.b-header__lang-title eng
-					.b-header__lang-title rus
-					
-			
-		
-	//- #toTop
-	//- 	i.fas.fa-level-up-alt
 
 							
 

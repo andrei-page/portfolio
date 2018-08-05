@@ -70,13 +70,14 @@ block main
 									
 					
 				
-				.b-header__box-item
+				.b-header__box-item.b-header__item-top
 					form()
 						h1.b-header__input-title subscribe to news
 						.input-wrap
 							input#name.name(type='text', required='').b-header__input
 							label(for='E-mail:' type="email") Your email address:
 						a(href="#").b-header__btn.b-header__hire-btn
+							i.fas.fa-long-arrow-alt-right.b-contact__btn-arrow
 							div subscribe
 				.b-header__icons
 					ul
@@ -89,13 +90,14 @@ block main
 						a(href="#")
 							li
 								i.fab.fa-github.b-header__social-icon.b-header__icon-git
-						a(href="#")
-							li
-								i.fa.fa-fire.b-header__social-icon.b-header__icon-fire
-
+						
 						a(href="#")
 							li
 								i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
+						a(href="#")
+							li
+								i.fab.fa-instagram.b-header__social-icon.b-header__icon-fire
+
 			.col-md-5.order-6.order-md-6
 				.b-header__bg-about
 					.b-header__overlay

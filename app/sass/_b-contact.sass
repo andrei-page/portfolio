@@ -110,16 +110,17 @@ input,textarea
 .file-upload 
 	position: absolute /* Даем возможность делать позиционирование, внутри данного элемента */
 	overflow: hidden; /* Все что выходит за пределы - скрываем */
-	width: 130px; /* Задаем ширину кнопки выбора файла */
+	width: 100px; /* Задаем ширину кнопки выбора файла */
 	background: #388a6b
 	height: 35px
 	color: #fff
 	top: 110%
 	right: 12%
 	text-align: center;
-	font-family: 'Stolzl-light'
-	font-size: .6em
-	letter-spacing: 5px
+	+font-fallback('Montserrat')
+	font-size: .73em
+	font-weight: 700
+	letter-spacing: 2.7px
 	+sm
 		right: 0%
 	&:hover

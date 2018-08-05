@@ -253,16 +253,16 @@ loaderSpinner();
 //     $( document ).ready(function() {
 //       $('#animate').addClass('animated fadeInUp');
 //       $('#animate1').addClass('animated fadeInUp');
-//       $('#animate2').addClass('animated fadeInRight');
+//       $('#animate2').addClass('animated fadeInLeft');
 //       $('#animate3').addClass('animated fadeInLeft');
-//       $('#animate4').addClass('animated fadeInDown');
-//       $('#animate5').addClass('animated fadeInUp');
-//       $('#animate6').addClass('animated fadeInUp');
-//       $('#animate7').addClass('animated fadeInLeft');
+//       $('#animate4').addClass('animated fadeInLeft');
+//       $('#animate5').addClass('animated fadeInLeft');
+//       $('#animate6').addClass('animated fadeInLeft');
+//       $('#animate7').addClass('animated fadeInRight');
 //       $('#animate8').addClass('animated fadeInRight');
 //       $('#animate9').addClass('animated fadeInRight');
-//       $('#animate10').addClass('animated fadeInLeft');
-// });
+//       $('#animate10').addClass('animated fadeInUp');
+//     });
 // //scroll top
 $(function() {
  

@@ -108,7 +108,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0;
-		width: 41.5%;
+		width: 41.65%;
 		+md
 			width: 100%
 			position: static
@@ -135,7 +135,7 @@
 		top: 0;
 		bottom: 0;
 		right: 0;
-		width: 41.5%;
+		width: 41.65%;
 		+md
 			width: 100%
 			position: relative
@@ -228,7 +228,7 @@
 	&__title
 		color: #fff;
 		+font-fallback('Montserrat')
-		font-size: 2rem;
+		font-size: 1.8em;
 		font-weight: 300;
 		animation: up-animate 1s cubic-bezier(0.28, 0, 0.18, 1)
 		letter-spacing: 0.1em;
@@ -237,10 +237,11 @@
 		text-align: center
 		text-transform: uppercase;
 		word-wrap: break-word;
-
+	&__item-top
+		padding-top: 150px !important
 	&__box-item
 		// border-top: 1px solid #f2f2f2
-		padding: 150px 50px 90px 50px
+		padding: 70px 50px 90px 50px
 		position: relative
 		animation-duration: 2s
 		+sm
@@ -270,12 +271,11 @@
 	&__input-title
 		clear: both;
 		color: #333;
-		font-size: .9em;
+		font-size: .76em;
 		font-weight: 700
 		+font-fallback('Montserrat')
 		letter-spacing: 0.1em;
 		line-height: 1.7;
-		margin-bottom: 1.5em;
 		margin-top: 0;
 		text-transform: uppercase;
 		&:after
@@ -305,19 +305,19 @@
 		
 	&__icon-codepen
 		&:hover
-			color: #ffffff
+			color: #6fa894
 	&__icon-linkedin
 		&:hover
-			color: #ffffff
+			color: #6fa894
 	&__icon-git
 		&:hover
-			color: #ffffff
+			color: #6fa894
 	&__icon-face
 		&:hover
-			color: #ffffff
+			color: #6fa894
 	&__icon-fire
 		&:hover
-			color: #ffffff
+			color: #6fa894
 
 
 
@@ -399,32 +399,29 @@
 	&__btn
 		display: inline-block;
 		text-decoration: none;
-		background-color: #4fc08d
+		background-color: $green
 		text-align: left;
 		position: relative;
 		color: #fff
-		+font-fallback('Lato')
-		font-size: 10px;
+		+font-fallback('Montserrat')
+		font-size: .73em;
 		font-weight: 700;
 		line-height: 34px;
 		width: 150px
 		height: 34px	
-		text-transform: uppercase;
 		/* Text style for "A, bout" */
-		letter-spacing: 5.2px;
+		letter-spacing: 2.7px;
 		overflow: hidden;
 		&:after
 			content: "subscribe"
-			display: flex
-			justify-content: center
+			padding-left: 30px
 		&:hover div
 			transform: translateZ(0)
 		div
 			transition: all .5s
 			display: inline-block;
 			background-color: #fff
-			color: #000
-			text-transform: uppercase;
+			color: $green
 			white-space: nowrap;
 			padding-left: 5px
 			position: absolute	
@@ -595,7 +592,7 @@
 		font-size: 1.3em
 
 	&__icons
-		
+		height: 60px;
 		display: flex
 		padding-top: 2%
 		align-items: center
@@ -607,7 +604,7 @@
 			li
 				display: inline-block
 				margin-right: 20px
-				color: #6fa894
+				color: #ffffff
 				
 			a
 				color: #fff
