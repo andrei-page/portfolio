@@ -46,6 +46,7 @@
     "postcss-inline-svg": "^3.0.0",
     "pump": "^1.0.2",
     "run-sequence": "^2.2.0",
+    "three": "^0.95.0",
     "webpack": "^3.10.0",
     "webpack-merge": "^4.1.1",
     "webpack-stream": "^4.0.0"

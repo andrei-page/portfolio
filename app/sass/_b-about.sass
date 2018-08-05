@@ -11,12 +11,12 @@
 		font-size: 1.4em
 		+font-fallback('Montserrat')
 		font-weight: 600
-		color: #4fc08d
+		color: $green
 	&__person-text
 		font-size: 1.4em
 		+font-fallback('Montserrat')
 		font-weight: 600
-		color: #4fc08d
+		color: $green
 		width: 380px
 		text-align: left
 		+sm
@@ -29,7 +29,7 @@
 		font-size: 1.4em
 		+font-fallback('Montserrat')
 		font-weight: 600
-		color: #4fc08d
+		color: $green
 		text-align: right
 		width: 380px
 		+sm
@@ -62,7 +62,7 @@
 				&:hover
 					text-decoration: none
 	&__img
-		width: 80%
+		width: 90%
 		display: block
 		margin-left: auto
 		margin-right: auto
@@ -76,7 +76,7 @@
 		margin-right: auto
 		box-shadow: 0 10px 6px -6px #777;
 	&__img-1
-		width: 81.7%
+		width: 84.5%
 		display: block
 		margin-left: auto
 		margin-right: auto 
@@ -96,7 +96,7 @@
 			&:before
 				content: ''
 				display: inline-block
-				background-color: #4fc08d
+				background-color: $green
 				width: 7px
 				height: 7px
 				margin-right: 1.5%
@@ -151,7 +151,7 @@
 			content: ' ';
 			height: 33px;
 			width: 2px;
-			background-color: #4fc08d
+			background-color: $green
 			z-index: 10
 			transform: rotate(45deg);
 	&__close
@@ -175,7 +175,7 @@
 			content: ' ';
 			height: 33px;
 			width: 2px;
-			background: #4fc08d
+			background: $green
 			transform: rotate(-45deg);
 			
 		
@@ -248,7 +248,8 @@
 		display: flex
 		justify-content: center
 		// animation: animate-text 1s cubic-bezier(.42,.97,1,1.49)
-		
+	&__box-top
+		margin-top: 13%
 	&__img-replace
 		position: absolute
 		display: block;
@@ -257,9 +258,9 @@
 		top: 85%//85%
 		right: 15%//15%
 		border-radius: 50%
-		background: #4fc08d
+		background: $green
 		cursor: pointer
-		box-shadow: 0 0 0 0 rgba(#4fc08d,.5)
+		box-shadow: 0 0 0 0 rgba($green,.5)
 		z-index: 2;
 		transition: background-color 0.3s;
 		animation: pulse 1.4s infinite cubic-bezier(.42,.97,.52,1.49)
@@ -297,11 +298,11 @@
 
 	70% 
 		transform: (scale(1));
-		box-shadow: 0 0 0 5px rgba(#4fc08d, 0.2);
+		box-shadow: 0 0 0 5px rgba($green, 0.2);
 
 	100% 
 		transform: (scale(.9));
-		box-shadow: 0 0 0 0 rgba(#4fc08d, 0.2);
+		box-shadow: 0 0 0 0 rgba($green, 0.2);
 
 		
 

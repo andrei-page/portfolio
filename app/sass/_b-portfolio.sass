@@ -26,7 +26,7 @@
             content: ' ';
             height: 33px;
             width: 2px;
-            background-color: #4fc08d
+            background-color: $green
             z-index: 10
             transform: rotate(45deg);
     &__position
@@ -56,7 +56,7 @@
         &:after
             content: ""
             display: inline-block
-            background-color: #4fc08d
+            background-color: $green
             width: 20px
             height: 2px
             vertical-align: middle
@@ -74,7 +74,7 @@
         ul
             margin-top: 5%
         li
-            color: #4fc08d
+            color: $green
             vertical-align: middle
             margin-top: -7px
             span
@@ -115,9 +115,9 @@
         bottom: 70px
         left: 130px
         border-radius: 50%
-        background: #4fc08d
+        background: $green
         cursor: pointer
-        box-shadow: 0 0 0 0 rgba(#4fc08d,.5)
+        box-shadow: 0 0 0 0 rgba($green,.5)
         z-index: 2;
         transition: background-color 0.3s;
         animation: pulse 1.4s infinite cubic-bezier(.42,.97,.52,1.49)
@@ -154,11 +154,11 @@
 
 	70% 
 		transform: (scale(1));
-		box-shadow: 0 0 0 5px rgba(#4fc08d, 0.2);
+		box-shadow: 0 0 0 5px rgba($green, 0.2);
 
 	100% 
 		transform: (scale(.9));
-		box-shadow: 0 0 0 0 rgba(#4fc08d, 0.2);
+		box-shadow: 0 0 0 0 rgba($green, 0.2);
 @keyframes animate-text
     from
         transform: translateY(50px)
@@ -181,7 +181,7 @@
     overflow-y: scroll
     height: 265px
     &::-webkit-scrollbar-thumb 
-        background-color: #4fc08d
+        background-color: $green
     &::-webkit-scrollbar
         width: 4px
 .nav-tabs .nav-item
@@ -196,6 +196,6 @@
     text-decoration: none
     font-size: 1.3em
 .nav-tabs .nav-item a:focus
-    color: #4fc08d
+    color: $green
 .nav-tabs
     border: none    

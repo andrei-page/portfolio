@@ -7,30 +7,83 @@ block main
 	.content#home
 		.row.no-gutters#portfolio
 			.col-md-7.order-last.order-md-6
-				.b-header__item-list
-				.b-header__box-item
-					form()
-						h1.b-header__input-title subscribe to news
-						.input-wrap
-							input#name.name(type='text', required='').b-header__input
-							label(for='E-mail:' type="email") Your email address:
-						a(href="#").b-header__btn.b-header__hire-btn
-							div subscribe				
-				.b-header__icons
-					ul
-						a(href="#")
-							li
-								i.fab.fa-codepen.b-header__social-icon.b-header__icon-codepen
-						a(href="#")
-							li
-								i.fab.fa-facebook-messenger.b-header__social-icon.b-header__icon-linkedin
-						a(href="#")
-							li
-								i.fab.fa-github.b-header__social-icon.b-header__icon-git
+				.row.b-top.no-gutters
+					.col-6
+						#slider-1
+							ul.slides
+								li.gallery-cell
+									img(src="img/img-header-4.jpg", alt="")
+								li.gallery-cell
+									img(src="img/img-header-3.jpg", alt="")
+								li.gallery-cell
+									img(src="img/img-header-1.jpg", alt="")
+								li.gallery-cell
+									img(src="img/img-header.jpg", alt="")
+									
 					
-						a(href="#")
-							li
-								i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
+							button.btn-next
+								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
+									path#arrow-line(fill='#231F20', d='M0 5.9h28.7v1H0z')
+									path(fill='#000', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
+
+					.col-6
+						#slider-2
+							ul.slides
+								li.gallery-cell
+									.b-header__item-card
+										.b-header__card-title #4
+										.b-header__card-text web application<br>
+											span.b-header__card--color testing
+										.b-header__card-desck Before launch, the site is thoroughly tested to identify and correct errors								
+
+								li.gallery-cell
+									.b-header__item-card
+										.b-header__card-title#animate2 #1
+										.b-header__card-text#animate3
+											span.b-header__card--color Search  and analysis 
+											| of existing sites
+										.b-header__card-desck#animate4 Market analysis is conducted. Monitoring of all possible competitors
+								li.gallery-cell
+									.b-header__item-card
+										.b-header__card-title #2
+										.b-header__card-text Development design 
+											span.b-header__card--color Ui/Ux 
+										.b-header__card-desck An individual design is developed in accordance with the subject matter of goods or services								
+							
+								li.gallery-cell
+									.b-header__item-card
+										.b-header__card-title #3
+										.b-header__card-text Site 
+											span.b-header__card--color development 
+											|
+										.b-header__card-desck The latest standards are being implemented. The site will work as quickly and correctly as possible in all browsersdasdr
+										
+
+
+				//- .b-header__box-item
+				//- 	form()
+				//- 		h1.b-header__input-title subscribe to news
+				//- 		.input-wrap
+				//- 			input#name.name(type='text', required='').b-header__input
+				//- 			label(for='E-mail:' type="email") Your email address:
+				//- 		a(href="#").b-header__btn.b-header__hire-btn
+				//- 			i.fas.fa-long-arrow-alt-right.b-contact__btn-arrow
+				//- 			div subscribe				
+				//- .b-header__icons
+				//- 	ul
+				//- 		a(href="#")
+				//- 			li
+				//- 				i.fab.fa-codepen.b-header__social-icon.b-header__icon-codepen
+				//- 		a(href="#")
+				//- 			li
+				//- 				i.fab.fa-facebook-messenger.b-header__social-icon.b-header__icon-linkedin
+				//- 		a(href="#")
+				//- 			li
+				//- 				i.fab.fa-github.b-header__social-icon.b-header__icon-git
+					
+				//- 		a(href="#")
+				//- 			li
+				//- 				i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
 				
 			.col-md-4.order-6.order-md-6
 				.overlay-navigation
@@ -46,12 +99,12 @@ block main
 								a(href='contact.html', data-content='Only the finest') Contact
 							
 				section.home
-					.open-overlay#animate4
+					.open-overlay
 						span.bar-top
 						span.bar-middle
 						span.bar-bottom
 				
-				.b-header__bg#animate8
+				.b-header__bg
 					.b-header__overlay
 					.b-header__item
 						.b-header__title flowl
