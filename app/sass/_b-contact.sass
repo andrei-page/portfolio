@@ -7,10 +7,28 @@
 	&__item-contact
 		+xs
 			padding-top: 65%
+	&__top-item
+		display: flex
+		justify-content: center
+		padding-top: 5%
+		+font-fallback('Montserrat')
+		color: $green
+		font-weight: 500
+		letter-spacing: 3px
+		font-size: 2.4em
+		
+		
+	&__item-span
+		font-size: .6em !important
+		color: #000000
+		font-weight: 900
+		+font-fallback('Montserrat')
+		
+
 	&__btn-arrow
 		position: absolute
 		right: 12px
-		top: 9px
+		top: 10px
 		font-size: 1.4em
 	&__btn
 		display: inline-block;
@@ -19,8 +37,8 @@
 		text-align: left;
 		position: relative;
 		color: #fff
-		+font-fallback('Montserrat')
-		font-size: .73em;
+		+font-fallback('Poppins')
+		font-size: .76em;
 		line-height: 34px;
 		font-weight: 500
 		width: 125px
@@ -30,10 +48,8 @@
 		overflow: hidden;
 		&:after
 			content: "send"
-			display: block
-			position: absolute
-			top: 0px
-			padding-left: 35px
+			display: flex
+			justify-content: center
 		
 		&:hover div
 			transform: translateZ(0)
@@ -140,3 +156,9 @@ input,textarea
 	line-height: 34px
 	display: flex
 	justify-content: center	
+
+// @keyframes top
+// 	from
+// 		margin-top: -20px
+// 	to
+// 		margin-top: 0px
