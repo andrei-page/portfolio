@@ -1,9 +1,11 @@
 extends templates/layout
 
 block main
-	//- .loading
-	//- 	.loader#loading
-	//- 	.loading_name Andrey V.
+	.loading
+		.loader#loading
+		.loading_name 
+			.b-contact__top-item FLO
+					span.b-contact__item-span W
 	.content
 		.overlay-navigation
 				nav(role='navigation') 
@@ -18,14 +20,14 @@ block main
 							a(href='contact.html', data-content='sent a message') Contact
 						
 		section.home
-			.open-overlay
-				span.bar-top#animate7
-				span.bar-middle#animate8
-				span.bar-bottom#animate9
+			.open-overlay#animate7
+				span.bar-top
+				span.bar-middle
+				span.bar-bottom
 		.row.no-gutters#portfolio
 			.col-md-7.order-last.order-md-6
-				.b-contact__top-item OW
-					span.b-contact__item-span L
+				.b-contact__top-item#animate9 FLO
+					span.b-contact__item-span W
 				.b-header__box-item.b-header__item-top
 					form()#form
 						h1.b-header__input-title#animate2 write to us
@@ -54,23 +56,14 @@ block main
 				iframe(src='https://snazzymaps.com/embed/79106', width='100%', height='320px', style='border:none;')
 
 
-				.b-header__icons
+				.b-header__box-footer
 					ul
-						a(href="#")
-							li
-								i.fab.fa-codepen.b-header__social-icon.b-header__icon-codepen
-						a(href="#")
-							li
-								i.fab.fa-facebook-messenger.b-header__social-icon.b-header__icon-linkedin
-						a(href="#")
-							li
-								i.fab.fa-github.b-header__social-icon.b-header__icon-git
-						a(href="#")
-							li
-								i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
-						a(href="#")
-							li
-								i.fab.fa-instagram.b-header__social-icon.b-header__icon-fire
+						li
+							a(href="#") Instagram
+						li
+							a(href="#") Github
+						li
+							a(href="#") Behance
 
 						
 				//- 	i.fas.fa-angle-right.fa-8x.b-header__right

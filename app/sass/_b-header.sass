@@ -252,7 +252,7 @@
 	&__title
 		color: #fff;
 		+font-fallback('Montserrat')
-		font-size: 1.8em;
+		font-size: 2em;
 		font-weight: 300;
 		animation: up-animate 1s cubic-bezier(0.28, 0, 0.18, 1)
 		letter-spacing: 0.1em;
@@ -268,6 +268,7 @@
 		justify-content: center
 		align-items: center
 		flex-direction: column
+		padding: 7px 0
 		ul
 			list-style-type: none;
 			margin: 0;
@@ -281,6 +282,20 @@
 					font-size: .8em
 					padding-top: 6%
 					color: $green
+					&:hover
+						text-decoration: none
+					&:after
+						background: none repeat scroll 0 0 transparent;
+						content: "";
+						display: block;
+						height: 1px;
+						margin: 0
+						background: $green
+						transition: width 0.3s ease 0s, left 0.3s ease 0s;
+						width: 0%;
+					&:hover:after
+						width: 100%; 
+				
 				
 				
 	
@@ -347,21 +362,7 @@
 		text-transform: uppercase;
 		
 		
-	&__icon-codepen
-		&:hover
-			color: #6fa894
-	&__icon-linkedin
-		&:hover
-			color: #6fa894
-	&__icon-git
-		&:hover
-			color: #6fa894
-	&__icon-face
-		&:hover
-			color: #6fa894
-	&__icon-fire
-		&:hover
-			color: #6fa894
+
 
 
 
@@ -632,27 +633,7 @@
 		font-style: italic
 		font-size: 1.3em
 
-	&__icons
-		height: 60px;
-		display: flex
-		padding-top: 2%
-		align-items: center
-		justify-content: center
-		background-color: #3b876a
-		
-		ul
-			list-style: none
-			li
-				display: inline-block
-				margin-right: 20px
-				color: #ffffff
-				
-			a
-				color: #fff
-				font-size: 1em
-				
-				&:hover
-					text-decoration: none
+
 	&__social-icon
 		padding-right: 5px
 		font-size: 28px
