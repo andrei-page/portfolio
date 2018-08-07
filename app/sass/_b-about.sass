@@ -70,7 +70,7 @@
 		+md
 			width: 92.1%
 	&__img-box
-		width: 65%
+		width: 80%
 		display: block
 		margin-left: auto
 		margin-right: auto
@@ -247,6 +247,39 @@
 		padding-top: 4%
 		display: flex
 		justify-content: center
+	&__box-desck
+		font-family: 'Stolzl-medium'
+		font-size: .8em
+		color: #7b7772
+		max-width: 400px	
+	&__box-span
+		color: $green
+		margin-left: 1px
+	&__icon-list 
+		
+		ul
+			list-style-type: none
+			li
+				display: inline-block
+				margin-right: 20px
+				a
+					font-size: 1.4em;
+					+font-fallback('Montserrat')
+					font-weight: 600;
+					color: #000000
+		&:before
+			content: ""
+			display: inline-block
+			border-top: 1px solid #000000
+			width: 5%
+
+	&__item-text
+		font-size: .85em;
+		+font-fallback('Montserrat')
+		font-weight: 600;
+		color: $green
+		display: flex
+		justify-content: center
 		// animation: animate-text 1s cubic-bezier(.42,.97,1,1.49)
 	&__box-top
 		margin-top: 13%
@@ -405,8 +438,10 @@ a.head
 	display: block;
 
 #card1
-	display: none
+	display: block
 
+#card2
+	display: none	
 .active 
 	display: block
 .active-animate	

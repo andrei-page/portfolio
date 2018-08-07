@@ -1,12 +1,12 @@
 .b-header
 	&__bg
-		background: url("../img/home.jpg") bottom	
+	
+		background: url("../img/books-business-computer-459654.jpg") center
 		height: 100vh
 		background-size: cover
-		width: 50%
 	
 	&__bg-portfolio
-		background: url("../img/books-business-computer-459654.jpg") center
+		background: url("../img/home.jpg") bottom	
 		height: 100vh
 		background-size: cover
 	&__bg-contact
@@ -301,7 +301,7 @@
 	
 	&__box-item
 		// border-top: 1px solid #f2f2f2
-		padding: 70px 50px 70px 50px
+		padding: 0px 50px 70px 50px
 		position: relative
 		animation-duration: 2s
 		+sm
@@ -331,7 +331,7 @@
 	&__input-title
 		clear: both;
 		color: #333;
-		font-size: .9em;
+		font-size: .8em;
 		font-weight: 700
 		+font-fallback('Montserrat')
 		line-height: 1.7;
@@ -447,10 +447,10 @@
 		text-align: left;
 		position: relative;
 		color: #fff
-		+font-fallback('Montserrat')
+		+font-fallback('Poppins')
 		font-size: .73em;
 		line-height: 34px;
-		width: 150px
+		width: 145px
 		font-weight: 500
 		height: 34px	
 		/* Text style for "A, bout" */
@@ -466,7 +466,8 @@
 			display: inline-block;
 			background-color: #fff
 			color: $green
-			font-weight: 500	
+			font-weight: 500
+			+font-fallback('Poppins')	
 			white-space: nowrap;
 			padding-left: 5px
 			position: absolute	
@@ -576,7 +577,7 @@
 		transition: all .8s cubic-bezier(.17,.67,1,1.23)
 		position: absolute
 		z-index: 10;
-		top: 190px
+		top: 120px
 		+lg
 			top: 155px
 		+md

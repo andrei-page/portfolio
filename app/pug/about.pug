@@ -26,10 +26,31 @@ block main
 			
 				#card1.b-about__card--first
 					.row
-						.col-6
+						.col-5
 							img(src="img/work.jpg", alt="").b-about__img-box
 							.b-about__item-title Vivdenko A.
-						.col-6
+							.b-about__item-text developer
+						.col-7
+							.b-about__box-desck Hello,<br> My name is Andrei. I'm from Ukraine(UTC +2.00).  I have 1 year of experience as a 
+								span.b-about__box-span front-end developer. 
+								| <br>My specialization is converting 
+								span.b-about__box-span  PSD/AI/Sketch 
+								| templates to
+								span.b-about__box-span  HTML/CSS.<br> 
+								| If you have a beautiful design and want to turn it into clean responsive
+								span.b-about__box-span HTML page,
+								| then I'm the one you need. Pleasant conversation and diligence in my work is the main qualities.
+
+
+
+							.b-about__icon-list 
+								ul
+									li
+										a(href="#")
+											i.fab.fa-behance
+									li
+										a(href="#")
+											i.fab.fa-instagram
 							
 				.row.no-gutters#card2.b-about__box-top
 					.col-6
@@ -79,25 +100,14 @@ block main
 						a(href="#").b-header__btn.b-header__hire-btn
 							i.fas.fa-long-arrow-alt-right.b-contact__btn-arrow
 							div subscribe
-				.b-header__icons
+				.b-header__box-footer
 					ul
-						a(href="#")
-							li
-								i.fab.fa-codepen.b-header__social-icon.b-header__icon-codepen
-						a(href="#")
-							li
-								i.fab.fa-linkedin-in.b-header__social-icon.b-header__icon-linkedin
-						a(href="#")
-							li
-								i.fab.fa-github.b-header__social-icon.b-header__icon-git
-						
-						a(href="#")
-							li
-								i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
-						a(href="#")
-							li
-								i.fab.fa-instagram.b-header__social-icon.b-header__icon-fire
-
+						li
+							a(href="#") Instagram
+						li
+							a(href="#") Github
+						li
+							a(href="#") Behance
 			.col-md-5.order-6.order-md-6
 				.b-header__bg-about
 					.b-header__overlay

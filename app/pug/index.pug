@@ -7,8 +7,8 @@ block main
 	.content#home
 		.row.no-gutters#portfolio
 			.col-md-7.order-last.order-md-6
-				.b-contact__top-item FLO
-					span.b-contact__item-span w
+				.b-contact__top-item fL
+					span.b-contact__item-span oW
 				.row.b-top.no-gutters
 					.col-lg-6.col-md-12
 						#slider-1
@@ -86,6 +86,15 @@ block main
 				//- 		a(href="#")
 				//- 			li
 				//- 				i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
+				.b-header__box-item
+					form()
+						h1.b-header__input-title subscribe to news
+						.input-wrap
+							input#name.name(type='text', required='').b-header__input
+							label(for='E-mail:' type="email") Your email address:
+						a(href="#").b-header__btn.b-header__hire-btn
+							i.fas.fa-long-arrow-alt-right.b-contact__btn-arrow
+							div subscribe
 				.b-header__box-footer
 					ul
 						li

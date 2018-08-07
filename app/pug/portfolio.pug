@@ -5,8 +5,11 @@ block main
 	//- 	.loader#loading
 	//- 	.loading_name Andrey V.
 	.content
+		
 		.row.no-gutters#portfolio
 			.col-md-7.b-slide__box.order-last.order-md-6
+				.b-contact__top-item FLO
+					span.b-contact__item-span w
 				.overlay-navigation
 					nav(role='navigation') 
 						ul
@@ -87,26 +90,18 @@ block main
 							h1 The Erling Bag
 							.b-portfolio__box-item
 								.b-portfolio__img-replace
-				button.btn-next
+				button.btn-next.b-portfolio__arrow-next
 					svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 29.3 13.4')
 						path#arrow-line(fill='#231F20', d='M0 5.9h28.7v1H0z')
 						path#arrow-line1(fill='#231F20', d='M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7')
-				.b-header__icons
+				.b-header__box-footer
 					ul
-						a(href="#")
-							li
-								i.fab.fa-codepen.b-header__social-icon.b-header__icon-codepen
-						a(href="#")
-							li
-								i.fab.fa-facebook-messenger.b-header__social-icon.b-header__icon-linkedin
-						a(href="#")
-							li
-								i.fab.fa-github.b-header__social-icon.b-header__icon-git
-						
-						a(href="#")
-							li
-								i.fab.fa-twitter.b-header__social-icon.b-header__icon-face
-				
+						li
+							a(href="#") Instagram
+						li
+							a(href="#") Github
+						li
+							a(href="#") Behance
 				//- 	i.fas.fa-angle-right.fa-8x.b-header__right
 			.col-md-5.order-6.order-md-6
 				.b-header__bg-portfolio
