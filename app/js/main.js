@@ -26,12 +26,21 @@ $('.b-about__close').click(function() {
 
 //portfolio
 $('.b-portfolio__box-item').click(function() {
-  $('.owl-carousel').animate({position: "absolute",
-  top: "1000px",transition: "cubic-bezier(.42,.97,.52,1.49)"},function(){
-    $(this).toggleClass("remove");
-  })
- $(".b-portfolio__item").fadeIn(1000);
- $('.b-portfolio__position').fadeIn(1000);
+  $('.owl-carousel').fadeOut(1000);
+  $(".b-portfolio__item").fadeIn(1000);
+  $('.b-portfolio__position').fadeIn(1000);
+});
+
+$('.b-portfolio__btn').click(function() {
+  $('.b-portfolio__position').fadeOut();
+  $('.owl-carousel').css("display","block").css("top","0px").removeClass("remove");
+});
+
+$('.b-portfolio__box-item1').click(function() {
+  $('.owl-carousel').fadeOut(1000);
+  $(".b-portfolio__item1").fadeIn(1000);
+  $(".b-portfolio__item").css("display","none");
+  $('.b-portfolio__position').fadeIn(1000);
 });
 
 $('.b-portfolio__btn').click(function() {

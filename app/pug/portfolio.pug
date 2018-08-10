@@ -50,7 +50,45 @@ block main
 
 
 						.col-lg-5.col-md-12
-							.b-portfolio__item-title Posh make-up
+							.b-portfolio__item-title posh
+							.b-portfolio__item-text landing page which provides makeup services for girls at various events.
+							.b-portfolio__item-nav Technologies:
+								ul
+									li
+										span Sass/Scss
+									li 
+										span Pug
+									li 
+										span Jquery animate
+									li 
+										span Gulp,Webpack
+							a(href="http://posh-make.surge.sh",target="_blank").b-header__hire-portfolio.b-header__btn-portfolio
+								div view
+						span.b-portfolio__btn
+				.b-portfolio__item1
+					.row.b-portfolio__position
+						.col-lg-7.col-md-12.b-portfolio__flex
+							ul#myTab.nav.nav-tabs.order-last(role='tablist')
+								li.nav-item
+									a#home-tab(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') 
+										i.fas.fa-desktop.b-porfolio__svg
+								li.nav-item
+									a#profile-tab(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false')
+										i.fas.fa-tablet-alt
+								li.nav-item
+									a#contact-tab(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false')
+										i.fas.fa-mobile-alt
+							#myTabContent.tab-content.order-first
+								#home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab') 
+									img(src='img/posh_psd.png', alt='posh').b-portfolio__img
+								#profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab') 
+									img(src='img/renome.jpg', alt='posh').b-portfolio__img
+								#contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+									img(src='img/renome.jpg', alt='posh').b-portfolio__img
+
+
+						.col-lg-5.col-md-12
+							.b-portfolio__item-title renome
 							.b-portfolio__item-text landing page which provides makeup services for girls at various events.
 							.b-portfolio__item-nav Technologies:
 								ul
@@ -66,7 +104,7 @@ block main
 								div view
 						span.b-portfolio__btn
 				.owl-carousel#animate6
-					.item
+					.item#item-1
 						img(src='img/posh.jpg', alt='posh')
 						.inner 
 							h1 Posh make-up
@@ -75,11 +113,11 @@ block main
 								//- h5 #pug #sass #scss
 							//- button.b-header__hire-portfolio.b-header__btn-portfolio
 							//- 	div view
-					.item
-						img(src='img/renome.jpg', alt='renome')
+					.item#item-2
+						img(src='img/renome-bg.jpeg', alt='renome')
 						.inner
 							h1 Renome restaraunt
-							.b-portfolio__box-item
+							.b-portfolio__box-item1
 								.b-portfolio__img-replace.b-portfolio__img-mod
 							//- button.b-header__hire-portfolio.b-header__btn-portfolio
 							//- 	div view
